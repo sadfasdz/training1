@@ -4,6 +4,7 @@
 // Пример подключения плагинов
 // @import "~plugin-name.scss";
 
+@import "~normalize.css";
 
 /**
 * Abstracts
@@ -12,18 +13,16 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
-
-
 /**
 * Base
 */
 @import "base/fonts";
 @import "base/generic";
 
-
-
 /*
 * Components
 */
 //  Пример подключения стилей блоков
 // @import "components/my-block";
+@import "blocks/header";
+@import "blocks/block";

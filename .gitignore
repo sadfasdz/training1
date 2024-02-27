@@ -9,3 +9,7 @@
 .DS_Store
 .idea/
 *.swp 
+
+
+/public
+/node_modules
