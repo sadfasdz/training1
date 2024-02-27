@@ -5,58 +5,79 @@
 * Значение цвета всегда указывается в HEX-формате в нижнем регистре (кроме исключительных случаев).
 */
 // Пример указания цветов
-$outer-space: #202f2f;
+$bunker: #121920;
+$white: #ffffff;
+$slate-gray: #768298;
+$heather: #bbc4d6;
+$wild-blue-yonder: #6680ae;
+$athens-gray: #ebebf1;
+$curious-blue: #34aadd;
+$tapestry: #a7507b;
+$cerise-red: #dc2c53;
+$carnation: #f95a59;
+$red-orange: #ff3332;
 
-$color-text: $outer-space;
-
-
+$color-text: $bunker;
+$color-link: $curious-blue;
+$unactive-color: $heather;
+$active-color: $slate-gray;
+$unactive-back-color: $athens-gray;
+$checked: $curious-blue;
+$list-marker: $cerise-red;
+$placeholder-color: $heather;
+$tab-text-color: $slate-gray;
+$error-color: $carnation;
 
 /**
 * Fonts
 */
+$font-path: "/assets/fonts/";
+$font-family-default: "Arial", "Helvetica", sans-serif;
+$font-family-custom: "Roboto";
+$font-family: $font-family-custom, $font-family-default;
+
+$font-weight-medium: 500;
+$font-weight-regular: 400;
+
+$font-size-huge: 36px;
+$font-size-big: 30px;
+$font-size-medium: 24px;
+$font-size-normal: 18px;
 $font-size-base: 16px;
+$font-size-small: 14px;
 
-
-
+$line-height-default: 1.7;
+$line-height-normal: 1.4;
+$line-height-small: 1.2;
 /**
 * Breakpoints
 */
 // Пример указания медиазапросов, затем можно использовать ее как '@media #{$screen-medium} {...}'
-$screen-medium: '(min-width: 768px)';
-
-
+$screen-desk: "(min-width: 1280px)";
+$screen-medium: "(min-width: 768px)";
+$screen-mobile: "(min-width: 375px)";
 
 /**
 * Layout
 */
 
-
-
 /**
 * Sizes
 */
-
-
 
 /**
 * Transitions and Animations
 */
 
-
-
 /**
 * Radius
 */
-
-
+$border-radius-base: 5px;
 
 /**
 * Box-shadows
 */
 
-
-
 /**
 * Z-indexes
 */
-
