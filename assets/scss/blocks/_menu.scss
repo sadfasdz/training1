@@ -10,4 +10,10 @@
   @media #{$screen-desk} {
     display: none;
   }
+
+  &__title {
+    @media #{$screen-desk} {
+      display: none;
+    }
+  }
 }

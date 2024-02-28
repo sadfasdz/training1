@@ -1,0 +1,17 @@
+.aside {
+  display: none;
+
+  background-color: red;
+  color: $white;
+
+  max-width: rem(286px);
+  width: 100%;
+
+  padding: rem(21px) rem(30px);
+
+  border-radius: rem($border-radius-base);
+
+  @media #{$screen-desk} {
+    display: block;
+  }
+}

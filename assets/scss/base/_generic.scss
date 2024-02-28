@@ -1,17 +1,18 @@
 * {
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-tap-highlight-color: inherit;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
 }
 
-aside {
-  background-color: red;
-  width: rem(375px);
-  border-radius: rem(6px);
-  height: rem(50px);
-
-  display: none;
-
-  @media #{$screen-desk} {
-    display: block;
-  }
+html {
+  font-family: $font-family;
+  font-size: 100%;
+  color: $color-text;
+  background-color: $background-color;
+  text-rendering: optimizeLegibility;
 }
