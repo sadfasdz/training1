@@ -1,9 +1,12 @@
 .header {
-  background-color: aqua;
+  width: rem(400px);
+  height: rem(400px);
 
-  height: rem($height-header-mobile);
+  color: $color-text;
+  background-color: $red-orange;
 
-  @media #{$screen-medium} {
-    height: rem($height-header-desk);
+  &__title {
+    @include title;
+    margin: 0;
   }
 }
