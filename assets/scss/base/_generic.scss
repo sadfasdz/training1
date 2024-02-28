@@ -2,3 +2,16 @@
   margin: 0;
   padding: 0;
 }
+
+aside {
+  background-color: red;
+  width: rem(375px);
+  border-radius: rem(6px);
+  height: rem(50px);
+
+  display: none;
+
+  @media #{$screen-desk} {
+    display: block;
+  }
+}

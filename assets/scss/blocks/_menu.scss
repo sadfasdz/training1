@@ -1,0 +1,13 @@
+.menu {
+  width: 50%;
+  height: 50%;
+  background-color: green;
+  display: block;
+
+  width: 100%;
+  height: rem(50px);
+
+  @media #{$screen-desk} {
+    display: none;
+  }
+}

@@ -1,0 +1,17 @@
+.content__inner {
+  display: flex;
+  flex-direction: column;
+  gap: rem(30px);
+
+  &__aside {
+    display: none;
+  }
+
+  @media #{$screen-desk} {
+    flex-direction: row;
+
+    &__aside {
+      display: block;
+    }
+  }
+}

@@ -55,7 +55,6 @@ $line-height-small: 1.2;
 // Пример указания медиазапросов, затем можно использовать ее как '@media #{$screen-medium} {...}'
 $screen-desk: "(min-width: 1280px)";
 $screen-medium: "(min-width: 768px)";
-$screen-mobile: "(min-width: 375px)";
 
 /**
 * Layout
@@ -64,6 +63,11 @@ $screen-mobile: "(min-width: 375px)";
 /**
 * Sizes
 */
+$max-width-container: 1240px;
+$gap-container: 20px;
+
+$height-header-desk: 80px;
+$height-header-mobile: 104px;
 
 /**
 * Transitions and Animations
