@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 
   -webkit-tap-highlight-color: inherit;
 
@@ -15,4 +17,69 @@ html {
   color: $color-text;
   background-color: $background-color;
   text-rendering: optimizeLegibility;
+}
+
+h1 {
+  @include title;
+  font-size: rem(36px);
+  margin-bottom: rem(30px);
+
+  line-height: 1.3;
+}
+
+h2 {
+  @include title;
+  margin-bottom: rem(20px);
+  font-size: rem(30px);
+
+  line-height: 1.27;
+}
+
+h3 {
+  @include title;
+  font-size: rem(20px);
+
+  margin-bottom: rem(20px);
+
+  line-height: 1.27;
+}
+
+img {
+  margin: rem(10px) 0 rem(20px);
+
+  width: 100%;
+}
+
+a {
+  color: $color-link;
+
+  line-height: 1.67;
+}
+
+p {
+  margin-bottom: rem(10px);
+  line-height: 1.67;
+}
+
+ul,
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: rem(10px);
+
+  margin-bottom: rem(20px);
+}
+
+li::marker {
+  color: $list-marker;
+}
+
+blockquote {
+  padding: rem(20px) rem(85px) rem(20px) rem(25px);
+  margin-bottom: rem(20px);
+
+  border-left: rem(5px) solid $border-color;
+  border-radius: rem(5px) 0 0 rem(5px);
+
+  line-height: 1.67;
 }
