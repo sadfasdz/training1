@@ -31,7 +31,7 @@ $error-color: $carnation;
 /**
 * Fonts
 */
-$font-path: "/assets/fonts/";
+$font-path: "/public/fonts/";
 $font-family-default: "Arial", "Helvetica", sans-serif;
 $font-family-custom: "Roboto";
 $font-family: $font-family-custom, $font-family-default;
@@ -55,7 +55,6 @@ $line-height-small: 1.2;
 // Пример указания медиазапросов, затем можно использовать ее как '@media #{$screen-medium} {...}'
 $screen-desk: "(min-width: 1280px)";
 $screen-medium: "(min-width: 768px)";
-$screen-mobile: "(min-width: 375px)";
 
 /**
 * Layout
