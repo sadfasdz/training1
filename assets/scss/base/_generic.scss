@@ -1,4 +1,18 @@
 * {
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-tap-highlight-color: inherit;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  font-family: $font-family;
+  font-size: 100%;
+  color: $color-text;
+  background-color: $background-color;
+  text-rendering: optimizeLegibility;
 }
