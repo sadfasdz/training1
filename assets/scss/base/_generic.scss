@@ -52,7 +52,8 @@ img {
 
 a {
   color: $color-link;
-
+  cursor: pointer;
+  text-decoration: none;
   line-height: 1.67;
 }
 
@@ -82,4 +83,9 @@ blockquote {
   border-radius: rem(5px) 0 0 rem(5px);
 
   line-height: 1.67;
+}
+
+button {
+  cursor: pointer;
+  border: none;
 }
