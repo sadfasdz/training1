@@ -1,0 +1,51 @@
+.checkbox {
+  &__inp:checked + label::before {
+    background-color: blue;
+  }
+  &__inp {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+
+    &:checked {
+      &__label::before {
+        background-color: blue;
+      }
+    }
+  }
+
+  &__label {
+    font-weight: $font-weight-regular;
+
+    display: flex;
+    align-items: center;
+    gap: rem(12px);
+
+    position: relative;
+
+    padding-left: rem(5px);
+
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: rem(20px);
+      height: rem(20px);
+      border: 1px solid $checked;
+      border-radius: rem(2px);
+      left: 0;
+    }
+
+    .icon {
+      width: rem(11px);
+      height: rem(8px);
+      stroke: $white;
+    }
+  }
+}
