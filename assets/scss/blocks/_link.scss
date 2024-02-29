@@ -1,0 +1,23 @@
+.link {
+  color: $color-link;
+  text-decoration: none;
+  &:hover {
+    color: $wild-blue-yonder;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:disabled {
+    color: $athens-gray;
+  }
+
+  &:visited {
+    color: $wild-blue-yonder;
+  }
+
+  &--btn {
+    background-color: transparent;
+  }
+}

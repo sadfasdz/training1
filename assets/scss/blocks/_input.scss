@@ -1,0 +1,28 @@
+.input {
+  padding: rem(17px) rem(20px);
+  max-width: rem(335px);
+  width: 100%;
+  border-radius: $border-radius-base;
+  border: rem(1px) solid $athens-gray;
+
+  &::placeholder {
+    color: $placeholder-color;
+  }
+
+  &:focus {
+    border-color: $slate-gray;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $unactive-back-color;
+  }
+
+  &--error {
+    border-color: $error-color;
+
+    &:focus {
+      border-color: $error-color;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.btn {
+  padding: rem(17.5px) rem(30px);
+  background-color: $btn-back-color;
+  color: $white;
+  border: none;
+  border-radius: rem($border-radius-base);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $wild-blue-yonder;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:disabled {
+    background-color: $athens-gray;
+  }
+
+  &--slide {
+    border-radius: rem($border-radius-base) 0 rem($border-radius-base) 0;
+    padding: rem(6px) rem(30px);
+  }
+
+  &--search {
+    padding: 0;
+
+    color: $slate-gray;
+
+    background-color: transparent;
+
+    &:hover {
+      background: none;
+      color: $wild-blue-yonder;
+    }
+
+    .icon {
+      width: rem(24px);
+      height: rem(24px);
+    }
+  }
+
+  &--arrow {
+    display: flex;
+    gap: rem(10px);
+    align-items: center;
+
+    .icon {
+      width: rem(12px);
+      height: rem(12px);
+    }
+  }
+}
