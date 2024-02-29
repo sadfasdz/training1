@@ -1,6 +1,8 @@
 .link {
-  color: $color-link;
   text-decoration: none;
+
+  color: $color-link;
+
   &:hover {
     color: $wild-blue-yonder;
   }
