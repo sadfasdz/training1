@@ -14,14 +14,14 @@
   }
 
   &__content {
-    margin-top: rem($height-header-mobile);
-    padding: rem(40px) 0 rem(100px);
-
-    width: 100%;
-
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+
+    width: 100%;
+
+    margin-top: rem($height-header-mobile);
+    padding: rem(40px) 0 rem(100px);
 
     @media #{$screen-medium} {
       margin-top: rem($height-header-desk);
@@ -30,12 +30,12 @@
   }
 
   &__body {
-    margin-top: rem($height-header-mobile);
-    padding: rem(40px) 0 rem(100px);
+    flex-grow: 1;
 
     width: 100%;
 
-    flex-grow: 1;
+    margin-top: rem($height-header-mobile);
+    padding: rem(40px) 0 rem(100px);
 
     @media #{$screen-medium} {
       margin-top: rem($height-header-desk);

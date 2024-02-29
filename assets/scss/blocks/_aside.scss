@@ -1,13 +1,13 @@
 .aside {
   display: none;
 
-  background-color: red;
-  color: $white;
-
   max-width: rem(286px);
   width: 100%;
 
   padding: rem(21px) rem(30px);
+
+  background-color: red;
+  color: $white;
 
   border-radius: rem($border-radius-base);
 
