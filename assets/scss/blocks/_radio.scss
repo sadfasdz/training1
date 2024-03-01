@@ -1,11 +1,10 @@
-.checkbox {
+.radio {
   &__inp {
     display: none;
   }
 
   &__inp:checked + &__label & {
-    &__icon {
-      color: $white;
+    &__icon::after {
       background-color: $curious-blue;
     }
   }
@@ -22,37 +21,40 @@
   }
 
   &__inp:disabled:checked + &__label & {
-    &__icon {
-      color: $heather;
+    &__icon::after {
+      background-color: $heather;
     }
   }
 
   &__label {
     display: flex;
-    gap: 8px;
     align-items: center;
+    gap: rem(9px);
 
     cursor: pointer;
   }
 
   &__icon {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    border: 1px solid $curious-blue;
 
     width: rem(20px);
     height: rem(20px);
 
-    color: transparent;
+    &::after {
+      display: block;
 
-    border-radius: rem(2px);
-    border: 1px solid $curious-blue;
+      width: rem(10px);
+      height: rem(10px);
 
-    transition: all 0.3s ease;
+      content: "";
 
-    &-pic {
-      width: rem(11px);
-      height: rem(8px);
+      border-radius: 50%;
+      background-color: transparent;
     }
   }
 }
