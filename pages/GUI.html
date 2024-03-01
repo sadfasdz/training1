@@ -123,6 +123,151 @@
           placeholder="Введите пару слов о себе..."
           disabled
         ></textarea>
+
+        <h2>чекбоксы</h2>
+        <form class="checkboxes">
+          <div class="checkbox">
+            <input
+              type="checkbox"
+              id="unactiveChecked"
+              name="checkbox"
+              value="unactiveChecked"
+              class="checkbox__inp"
+              checked
+              disabled
+            />
+            <label for="unactiveChecked" class="checkbox__label">
+              <span class="checkbox__icon">
+                <svg class="checkbox__icon-pic icon">
+                  <use
+                    xlink:href="../public/images/icons/sprite.svg#icon-check-mark"
+                  ></use>
+                </svg>
+              </span>
+              <span>Неактивен, выбран</span>
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <input
+              type="checkbox"
+              id="unactiveUnChecked"
+              name="checkbox"
+              value="unactiveUnChecked"
+              class="checkbox__inp"
+              disabled
+            />
+            <label for="unactiveUnChecked" class="checkbox__label">
+              <span class="checkbox__icon">
+                <svg class="checkbox__icon-pic icon">
+                  <use
+                    xlink:href="../public/images/icons/sprite.svg#icon-check-mark"
+                  ></use>
+                </svg>
+              </span>
+              <span>Неактивен, невыбран</span>
+            </label>
+          </div>
+          <div class="checkbox">
+            <input
+              type="checkbox"
+              id="activeUnChecked"
+              name="checkbox"
+              value="activeUnChecked"
+              class="checkbox__inp"
+            />
+            <label for="activeUnChecked" class="checkbox__label">
+              <span class="checkbox__icon">
+                <svg class="checkbox__icon-pic icon">
+                  <use
+                    xlink:href="../public/images/icons/sprite.svg#icon-check-mark"
+                  ></use>
+                </svg>
+              </span>
+              <span>Активен, не выбран</span>
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <input
+              type="checkbox"
+              id="activeChecked"
+              name="checkbox"
+              value="activeChecked"
+              class="checkbox__inp"
+              checked
+            />
+            <label for="activeChecked" class="checkbox__label">
+              <span class="checkbox__icon">
+                <svg class="checkbox__icon-pic icon">
+                  <use
+                    xlink:href="../public/images/icons/sprite.svg#icon-check-mark"
+                  ></use>
+                </svg>
+              </span>
+              <span>Активен,выбран</span>
+            </label>
+          </div>
+        </form>
+
+        <h2>Radio</h2>
+        <div class="radios">
+          <div class="radio">
+            <input
+              type="radio"
+              class="radio__inp"
+              name="radio"
+              id="radio-1"
+              value="radio-1"
+              disabled
+              checked
+            />
+            <label for="radio-1" class="radio__label">
+              <span class="radio__icon"></span>
+              <span>Text</span>
+            </label>
+          </div>
+          <div class="radio">
+            <input
+              type="radio"
+              class="radio__inp"
+              name="radio"
+              id="radio-2"
+              value="radio-2"
+              disabled
+            />
+            <label for="radio-2" class="radio__label">
+              <span class="radio__icon"></span>
+              <span>Text</span>
+            </label>
+          </div>
+          <div class="radio">
+            <input
+              type="radio"
+              class="radio__inp"
+              name="radio"
+              id="radio-3"
+              value="radio-3"
+            />
+            <label for="radio-3" class="radio__label">
+              <span class="radio__icon"></span>
+              <span>Text</span>
+            </label>
+          </div>
+          <div class="radio">
+            <input
+              type="radio"
+              class="radio__inp"
+              name="radio"
+              id="radio-4"
+              value="radio-4"
+            />
+            <label for="radio-4" class="radio__label">
+              <span class="radio__icon"></span>
+              <span>Text</span>
+            </label>
+          </div>
+        </div>
       </div>
     </main>
     <footer class="page__footer footer">

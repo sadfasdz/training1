@@ -1,0 +1,58 @@
+.checkbox {
+  &__inp {
+    display: none;
+  }
+
+  &__inp:checked + &__label & {
+    &__icon {
+      color: $white;
+      background-color: $curious-blue;
+    }
+  }
+
+  &__inp:disabled + &__label {
+    cursor: default;
+  }
+
+  &__inp:disabled + &__label & {
+    &__icon {
+      border-color: $heather;
+      background-color: $athens-gray;
+    }
+  }
+
+  &__inp:disabled:checked + &__label & {
+    &__icon {
+      color: $heather;
+    }
+  }
+
+  &__label {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    cursor: pointer;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: rem(20px);
+    height: rem(20px);
+
+    color: transparent;
+
+    border-radius: rem(2px);
+    border: 1px solid $curious-blue;
+
+    transition: all 0.3s ease;
+
+    &-pic {
+      width: rem(11px);
+      height: rem(8px);
+    }
+  }
+}
