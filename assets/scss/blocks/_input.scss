@@ -1,29 +1,39 @@
 .input {
-  max-width: rem(335px);
-  width: 100%;
-  padding: rem(17px) rem(20px);
+  &__control {
+    max-width: rem(335px);
+    height: rem(50px);
+    width: 100%;
 
-  border-radius: $border-radius-base;
-  border: rem(1px) solid $athens-gray;
+    padding: rem(17px) rem(20px);
 
-  &::placeholder {
-    color: $placeholder-color;
-  }
+    border-radius: $border-radius-base;
+    border: rem(1px) solid $athens-gray;
 
-  &:focus {
-    border-color: $slate-gray;
-    outline: none;
-  }
-
-  &:disabled {
-    background-color: $unactive-back-color;
-  }
-
-  &--error {
-    border-color: $error-color;
+    &::placeholder {
+      color: $placeholder-color;
+    }
 
     &:focus {
+      border-color: $slate-gray;
+      outline: none;
+    }
+
+    &:disabled {
+      background-color: $unactive-back-color;
+    }
+
+    &--error {
       border-color: $error-color;
+
+      &:focus {
+        border-color: $error-color;
+      }
+    }
+
+    &--search {
+      max-width: 100%;
+
+      padding-left: rem(39px);
     }
   }
 }
