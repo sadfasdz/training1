@@ -96,7 +96,7 @@
         <button class="link link--btn">кнопка без заливки</button>
         <button class="btn btn--slide">кнопка слайда</button>
         <button class="btn btn--search">
-          <svg class="icon">
+          <svg class="btn--search-icon icon">
             <use
               xlink:href="../public/images/icons/sprite.svg#icon-search"
             ></use>
@@ -104,40 +104,158 @@
         </button>
         <button class="btn btn--arrow">
           Кнопка со стрелкой
-          <svg class="icon">
+          <svg class="btn--arrow-icon icon">
             <use
               xlink:href="../public/images/icons/sprite.svg#icon-arrow"
             ></use>
           </svg>
         </button>
 
-        <h3 class="title title--line">Загаловок с подчеркиванием</h3>
-        <h3 class="title title--unactive">Неактивный загаловок</h3>
-
         <h2>Инпуты</h2>
+        <div class="gui-wrapper">
+          <form action="" class="form">
+            <div class="form__field">
+              <div class="form__field-block form__field-block--label">
+                <label for="input1" class="form__label"
+                  ><span class="form__label-text">Фамилия</span>
+                  <span class="form__label-star">*</span>
+                </label>
+              </div>
+              <div class="form__field-block form__field-block--input">
+                <div class="input">
+                  <input
+                    type="text"
+                    placeholder="placeholder..."
+                    class="input__control"
+                    id="input1"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
 
-        <input type="text" placeholder="placeholder..." class="input" />
-        <input
-          type="text"
-          placeholder="placeholder..."
-          class="input"
-          disabled
-        />
-        <input type="text" placeholder="error" class="input input--error" />
+          <form action="" class="form">
+            <div class="form__field">
+              <div class="form__field-block form__field-block--label">
+                <label for="input2" class="form__label"
+                  ><span class="form__label-text form__label-text--disabled"
+                    >Город</span
+                  >
+                </label>
+              </div>
+              <div class="form__field-block form__field-block--input">
+                <div class="input">
+                  <input
+                    type="text"
+                    placeholder="placeholder..."
+                    class="input__control"
+                    id="input2"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <form action="" class="form">
+            <div class="form__field">
+              <div class="form__field-block form__field-block--label">
+                <label for="input3" class="form__label"
+                  ><span class="form__label-text">Имя</span>
+                  <span class="form__label-star">*</span>
+                </label>
+              </div>
+              <div class="form__field-block form__field-block--input">
+                <div class="input">
+                  <input
+                    type="text"
+                    placeholder="placeholder..."
+                    class="input__control input__control--error"
+                    id="input3"
+                  />
+                </div>
+              </div>
+              <div class="form__field-block form__field-block--label">
+                <label for="input3" class="form__label"
+                  ><span class="form__label-text form__label-text--error"
+                    >Имя указано неверно</span
+                  >
+                </label>
+              </div>
+            </div>
+          </form>
+
+          <form action="" class="form">
+            <div class="form__field">
+              <div class="form__field-block form__field-block--search">
+                <button class="btn btn--search">
+                  <svg class="btn--search-icon icon">
+                    <use
+                      xlink:href="../public/images/icons/sprite.svg#icon-search"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="form__field-block form__field-block--input">
+                <div class="input">
+                  <input
+                    type="text"
+                    placeholder="найти..."
+                    class="input__control input__control--search"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
 
         <h2>textarea</h2>
-        <textarea
-          name="textarea"
-          class="textarea"
-          placeholder="Введите пару слов о себе..."
-        ></textarea>
+        <div class="gui-wrapper">
+          <form action="" class="form">
+            <div class="form__field">
+              <div class="form__field-block form__field-block--label">
+                <label for="textarea1" class="form__label"
+                  ><span class="form__label-text">Textarea</span>
+                </label>
+              </div>
+              <div class="form__field-block form__field-block--textarea">
+                <div class="textarea">
+                  <textarea
+                    type="text"
+                    placeholder="placeholder..."
+                    class="textarea__control"
+                    id="textarea1"
+                    name="textarea"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </form>
 
-        <textarea
-          name="textarea"
-          class="textarea"
-          placeholder="Введите пару слов о себе..."
-          disabled
-        ></textarea>
+          <form action="" class="form">
+            <div class="form__field">
+              <div class="form__field-block form__field-block--label">
+                <label for="textarea2" class="form__label"
+                  ><span class="form__label-text form__label-text--disabled"
+                    >Textarea</span
+                  >
+                </label>
+              </div>
+              <div class="form__field-block form__field-block--textarea">
+                <div class="textarea">
+                  <textarea
+                    type="text"
+                    placeholder="placeholder..."
+                    class="textarea__control"
+                    id="textarea2"
+                    name="textarea"
+                    disabled
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
 
         <h2>чекбоксы</h2>
         <form class="checkboxes">
@@ -289,4 +407,12 @@
       <div class="container">footer</div>
     </footer>
   </body>
+
+  <style>
+    .gui-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  </style>
 </html>

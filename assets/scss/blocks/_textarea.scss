@@ -1,25 +1,27 @@
 .textarea {
-  max-width: rem(702px);
-  width: 100%;
-  min-height: rem(100px);
+  &__control {
+    max-width: rem(702px);
+    width: 100%;
+    min-height: rem(100px);
 
-  padding: rem(17px) rem(20px);
+    padding: rem(17px) rem(20px);
 
-  border: rem(1px) solid $athens-gray;
-  border-radius: $border-radius-base;
+    border: rem(1px) solid $athens-gray;
+    border-radius: $border-radius-base;
 
-  resize: none;
+    resize: none;
 
-  &::placeholder {
-    color: $placeholder-color;
-  }
+    &::placeholder {
+      color: $placeholder-color;
+    }
 
-  &:focus {
-    border-color: $slate-gray;
-    outline: none;
-  }
+    &:focus {
+      border-color: $slate-gray;
+      outline: none;
+    }
 
-  &:disabled {
-    background-color: $unactive-back-color;
+    &:disabled {
+      background-color: $unactive-back-color;
+    }
   }
 }
