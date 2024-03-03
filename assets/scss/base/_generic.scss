@@ -58,9 +58,10 @@ h3 {
 }
 
 img {
-  margin: rem(10px) 0 rem(20px);
-
-  width: 100%;
+  &:not([class]) {
+    width: 100%;
+    margin-bottom: rem(20px);
+  }
 }
 
 a {
@@ -86,11 +87,11 @@ p {
   &:not([class]) {
     margin-bottom: rem(10px);
   }
-  margin-bottom: rem(10px);
 }
 
 ul,
 ol {
+  list-style: none;
   display: flex;
   flex-direction: column;
 
@@ -114,6 +115,12 @@ ol {
       margin-bottom: rem(10px);
       padding-left: rem(10px);
     }
+  }
+}
+
+ul {
+  &:not([class]) {
+    list-style-type: disc;
   }
 }
 

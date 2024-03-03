@@ -1,9 +1,57 @@
 .header {
   height: rem($height-header-mobile);
 
-  background-color: aqua;
+  background-color: $white;
+
+  box-shadow: 0 rem(3px) rem(10px) 0 rgba(0, 0, 0, 0.05);
 
   @media #{$screen-medium} {
     height: rem($height-header-desk);
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: rem(16px) rem(60px);
+
+    padding-top: rem(16px);
+
+    @media #{$screen-medium} {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__col {
+    &--logo {
+      width: rem(135px);
+    }
+
+    &--search {
+      flex-grow: 0;
+      order: 2;
+
+      width: 120%;
+
+      margin: 0 rem(-20px);
+      @media #{$screen-medium} {
+        max-width: 100%;
+        flex-grow: 1;
+        order: 1;
+      }
+    }
+
+    &--profile {
+      order: 1;
+      @media #{$screen-medium} {
+        order: 2;
+        height: rem(84px);
+        display: flex;
+        align-items: center;
+        border-left: rem(1px) solid $athens-gray;
+        margin: rem(-20px) 0;
+      }
+    }
   }
 }
