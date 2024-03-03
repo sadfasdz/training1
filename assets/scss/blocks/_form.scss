@@ -8,9 +8,12 @@
     &-block {
       &--search {
         position: absolute;
+        top: 50%;
         left: rem(10px);
 
-        transform: translateY(45%);
+        height: rem(24px);
+
+        transform: translateY(-50%);
       }
     }
   }
