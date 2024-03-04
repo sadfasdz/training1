@@ -65,13 +65,17 @@ img {
 }
 
 a {
-  color: $color-link;
+  &:not([class]) {
+    color: $color-link;
+  }
   cursor: pointer;
   text-decoration: none;
 }
 
 a:visited {
-  color: $color-link;
+  &:not([class]) {
+    color: $color-link;
+  }
 }
 
 a:active {
@@ -92,10 +96,11 @@ p {
 ul,
 ol {
   list-style: none;
-  display: flex;
-  flex-direction: column;
 
   &:not([class]) {
+    display: flex;
+    flex-direction: column;
+
     margin-bottom: rem(20px);
 
     ul,

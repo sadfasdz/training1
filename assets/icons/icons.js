@@ -8,7 +8,6 @@ import "./svg/comment.svg";
 import "./svg/exclamation.svg";
 import "./svg/eye.svg";
 import "./svg/footer-logo.svg";
-import "./svg/greater.svg";
 import "./svg/heart.svg";
 import "./svg/instagram.svg";
 import "./svg/menu.svg";
