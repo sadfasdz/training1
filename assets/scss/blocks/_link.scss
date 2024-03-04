@@ -3,6 +3,8 @@
 
   color: $color-link;
 
+  transition: all 0.4s ease;
+
   &:hover {
     color: $wild-blue-yonder;
   }
