@@ -12,11 +12,12 @@
       width: rem(40px);
       height: rem(40px);
       color: $heather;
-    }
-  }
 
-  @media #{$screen-desk} {
-    padding-right: rem(40px);
-    border-right: rem(1px) solid rgba($heather, 0.6);
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: $slate-gray;
+      }
+    }
   }
 }
