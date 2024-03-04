@@ -4,7 +4,12 @@
   }
 
   &__pic {
-    &-footer {
+    &--header {
+      width: rem(135px);
+      height: rem(30px);
+    }
+
+    &--footer {
       height: rem(18px);
       color: $heather;
     }

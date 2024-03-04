@@ -46,11 +46,14 @@
   }
 
   &__name {
+    overflow: hidden;
+
     width: rem(90px);
 
     padding-left: rem(10px);
 
-    word-break: break-word;
+    text-align: right;
+    text-overflow: ellipsis;
 
     color: $slate-gray;
   }
@@ -59,12 +62,12 @@
     height: rem(40px);
     width: rem(40px);
 
+    border-radius: 50%;
+
     background-image: url("../../public/images/icons/userpic.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-    border-radius: 50%;
     &-pic {
       width: rem(40px);
       height: rem(40px);
