@@ -1,0 +1,74 @@
+.card {
+  position: relative;
+
+  height: 300px;
+
+  background-color: $white;
+
+  &__favorites {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: rem(45px);
+    height: rem(45px);
+
+    background-color: $white;
+
+    z-index: 10;
+  }
+
+  &__image {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    &::before {
+      $card-width: rem(335px);
+      $card-height: rem(159px);
+
+      display: block;
+
+      padding-top: percentage($card-height/$card-width);
+
+      content: "";
+
+      @media #{$screen-medium} {
+        $card-width: rem(354px);
+        $card-height: rem(159px);
+
+        padding-top: percentage($card-height/$card-width);
+      }
+
+      @media #{$screen-desk} {
+        $card-width: rem(392px);
+        $card-height: rem(159px);
+
+        padding-top: percentage($card-height/$card-width);
+      }
+    }
+
+    &-pic {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  &__box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
