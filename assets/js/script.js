@@ -1,7 +1,7 @@
 /**
  * Vendors
  */
-import $ from 'jquery';
+import $ from "jquery";
 window.$ = $;
 
 // Пример подключения плагина
@@ -12,35 +12,29 @@ window.$ = $;
  */
 // Пример подключения модуля
 // import myModule from './modules/my-module-function';
+import tabs from "./modules/tabs";
 
 const app = {
-    ready() {
-        // Пример вызова импортированнывх функций
-        // pluginName();
+  ready() {
+    // Пример вызова импортированнывх функций
+    // pluginName();
 
-        // myModule();
-    },
+    // myModule();
+    tabs();
+  },
 
-    load() {
+  load() {},
 
-    },
+  resize() {},
 
-    resize() {
-
-    },
-
-    scroll() {
-
-    },
+  scroll() {},
 };
 
-
-
 $(() => {
-    app.ready();
+  app.ready();
 
-    $(window)
-        .on('load', app.load)
-        .on('resize', app.resize)
-        .on('scroll', app.scroll);
+  $(window)
+    .on("load", app.load)
+    .on("resize", app.resize)
+    .on("scroll", app.scroll);
 });
