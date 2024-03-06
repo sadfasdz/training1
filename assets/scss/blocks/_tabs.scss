@@ -19,7 +19,8 @@
   }
 
   &--default & {
-    &__list {
+    &__items {
+      border-bottom: 1px solid $heather;
     }
 
     &__item {
