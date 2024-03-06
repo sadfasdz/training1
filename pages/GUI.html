@@ -1129,6 +1129,53 @@
             </li>
           </ul>
         </div>
+
+        <h2>Tabs</h2>
+
+        <div class="tabs tabs--blue" data-tabs>
+          <nav class="tabs__items">
+            <ul class="tabs__list">
+              <li class="tabs__item tabs__item--active" data-tab="news">
+                Новости
+              </li>
+              <li class="tabs__item" data-tab="sale">Акции</li>
+            </ul>
+          </nav>
+
+          <div class="tabs__body">
+            <div
+              class="tabs__block tabs__block--active"
+              data-tab-section="news"
+            >
+              новости
+            </div>
+            <div class="tabs__block" data-tab-section="sale">акции</div>
+          </div>
+        </div>
+
+        <h2>Tabs 2</h2>
+
+        <div class="tabs tabs--default" data-tabs>
+          <nav class="tabs__items">
+            <ul class="tabs__list">
+              <li class="tabs__item tabs__item--active" data-tab="news2">
+                Новости
+              </li>
+              <li class="tabs__item" data-tab="sale2">Акции</li>
+              <li class="tabs__item">Неактивный таб, hover</li>
+            </ul>
+          </nav>
+
+          <div class="tabs__body">
+            <div
+              class="tabs__block tabs__block--active"
+              data-tab-section="news2"
+            >
+              новости
+            </div>
+            <div class="tabs__block" data-tab-section="sale2">акции</div>
+          </div>
+        </div>
       </div>
     </main>
     <footer class="page__footer footer">
@@ -1179,6 +1226,7 @@
         </div>
       </div>
     </footer>
+    <script src="/public/js/script.js"></script>
   </body>
 
   <style>
