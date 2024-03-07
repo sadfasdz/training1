@@ -1,0 +1,12 @@
+.icon {
+  &__slide {
+    height: rem(20px);
+    width: rem(20px);
+
+    color: $wild-blue-yonder;
+
+    &--red {
+      color: $red-orange;
+    }
+  }
+}
