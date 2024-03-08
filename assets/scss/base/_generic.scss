@@ -27,6 +27,9 @@ body {
 h1 {
   @include title;
 
+  margin: 0;
+  padding: 0;
+
   &:not([class]) {
     font-size: rem(36px);
     margin-bottom: rem(30px);
@@ -38,6 +41,9 @@ h1 {
 h2 {
   @include title;
 
+  margin: 0;
+  padding: 0;
+
   &:not([class]) {
     font-size: rem(30px);
     line-height: 1.27;
@@ -48,6 +54,9 @@ h2 {
 
 h3 {
   @include title;
+
+  margin: 0;
+  padding: 0;
 
   &:not([class]) {
     font-size: rem(20px);
