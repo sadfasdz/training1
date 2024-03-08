@@ -1,0 +1,8 @@
+.notifications {
+  &__list {
+    display: flex;
+    gap: rem(32px);
+
+    overflow: hidden;
+  }
+}
