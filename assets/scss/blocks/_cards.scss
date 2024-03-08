@@ -4,6 +4,7 @@
     flex-wrap: wrap;
 
     margin-top: rem(-20px);
+    margin-bottom: rem(11px);
 
     @media #{$screen-medium} {
       margin-left: rem(-10px);
@@ -55,5 +56,9 @@
         order: 3;
       }
     }
+  }
+
+  &__btn {
+    text-align: -webkit-center;
   }
 }
