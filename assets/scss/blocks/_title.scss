@@ -13,14 +13,4 @@
 
     margin-bottom: rem(10px);
   }
-
-  &--slide {
-    font-size: $font-size-base;
-    line-height: 1.5;
-
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    overflow: hidden;
-  }
 }
