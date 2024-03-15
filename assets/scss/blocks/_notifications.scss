@@ -1,14 +1,4 @@
 .notifications {
-  margin-bottom: rem(40px);
-
-  @media #{$screen-medium} {
-    margin-bottom: rem(50px);
-  }
-
-  @media #{$screen-desk} {
-    margin-bottom: rem(31px);
-  }
-
   &__list {
     display: flex;
     gap: rem(32px);

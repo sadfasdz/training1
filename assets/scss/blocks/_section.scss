@@ -1,0 +1,13 @@
+.section {
+  &--info {
+    padding: rem(40px) 0;
+
+    @media #{$screen-medium} {
+      padding-top: rem(50px);
+    }
+
+    @media #{$screen-desk} {
+      padding-top: rem(31px);
+    }
+  }
+}
