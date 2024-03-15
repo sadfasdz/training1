@@ -26,6 +26,36 @@
     padding: rem(6px) rem(30px);
   }
 
+  &__menu {
+    display: flex;
+    gap: rem(10px);
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    margin-bottom: rem(20px);
+    padding: rem(20px);
+
+    color: $curious-blue;
+    background-color: $white;
+
+    border-radius: rem(6px);
+
+    @media #{$screen-desk} {
+      display: none;
+    }
+
+    &:hover {
+      background-color: #fafafa;
+    }
+
+    &-icon {
+      width: rem(24px);
+      height: rem(24px);
+    }
+  }
+
   &--search {
     padding: 0;
     margin-left: rem(10px);

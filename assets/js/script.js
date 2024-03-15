@@ -13,6 +13,7 @@ window.$ = $;
 // Пример подключения модуля
 // import myModule from './modules/my-module-function';
 import tabs from "./modules/tabs";
+import menu from "./modules/menu";
 
 const app = {
   ready() {
@@ -21,6 +22,7 @@ const app = {
 
     // myModule();
     tabs();
+    menu();
   },
 
   load() {},

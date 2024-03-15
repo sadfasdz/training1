@@ -10,7 +10,26 @@
     }
   }
 
+  &__title {
+    margin-bottom: rem(30px);
+    @media #{$screen-desk} {
+      margin-bottom: rem(40px);
+    }
+  }
+
   &__main {
     width: 100%;
+  }
+
+  &__btn {
+    margin-bottom: rem(30px);
+  }
+
+  &__breadcrumbs {
+    margin-bottom: rem(10px);
+
+    @media #{$screen-medium} {
+      margin-bottom: rem(15px);
+    }
   }
 }
