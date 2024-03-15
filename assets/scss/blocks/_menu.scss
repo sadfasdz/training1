@@ -1,0 +1,163 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+
+  visibility: hidden;
+  transition: all 0.3s ease;
+
+  z-index: 60;
+
+  @media #{$screen-medium} {
+    background: rgba(20, 20, 44, 0.6);
+    backdrop-filter: blur(rem(10px));
+  }
+
+  @media #{$screen-desk} {
+    position: static;
+
+    max-width: rem(286px);
+    height: auto;
+
+    margin-left: 0;
+
+    visibility: visible;
+
+    background-color: transparent;
+
+    box-shadow: 0 rem(3px) rem(10px) 0 rgba(164, 164, 164, 0.03),
+      0 rem(12px) rem(40px) 0 rgba(0, 0, 0, 0.03);
+
+    z-index: 0;
+  }
+
+  &--active {
+    visibility: visible;
+  }
+
+  &--active & {
+    &__content {
+      transform: translateY(0);
+
+      transition: all 0.3s ease;
+
+      @media #{$screen-medium} {
+        transform: translateX(0);
+
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  &__content {
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+
+    transform: translateY(-200%);
+
+    transition: all 0.3s ease;
+
+    @media #{$screen-medium} {
+      max-width: rem(375px);
+
+      margin-left: auto;
+
+      transform: translateX(rem(400px));
+
+      transition: all 0.3s ease;
+    }
+
+    @media #{$screen-desk} {
+      transform: translateX(0);
+
+      transition: all 0.3s ease;
+
+      border-radius: rem(8px);
+    }
+
+    &--active {
+      visibility: visible;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: rem(10px);
+    padding: rem(15px) rem(20px);
+
+    border-bottom: rem(1px) solid rgba(#c0c8db, 0.5);
+
+    &-title {
+      font-size: $font-size-normal;
+      line-height: 1.4;
+      font-weight: 500;
+    }
+
+    &-btn {
+      width: rem(24px);
+      height: rem(24px);
+
+      background-color: transparent;
+    }
+
+    &-icon {
+      width: rem(24px);
+      height: rem(24px);
+
+      color: $curious-blue;
+    }
+
+    @media #{$screen-desk} {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    @media #{$screen-desk} {
+      display: block;
+
+      padding: 0;
+    }
+  }
+
+  &__link {
+    line-height: 1.4;
+
+    display: block;
+
+    color: $color-text;
+
+    cursor: pointer;
+
+    padding: rem(10px) rem(20px);
+
+    @media #{$screen-desk} {
+      padding: rem(21px) rem(30px);
+    }
+
+    &:hover {
+      color: $color-text;
+      text-decoration: none;
+
+      background-color: #fafafa;
+    }
+
+    &--active {
+      font-weight: 500;
+
+      pointer-events: none;
+    }
+  }
+}
