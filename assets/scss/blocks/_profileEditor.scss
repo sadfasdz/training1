@@ -1,0 +1,21 @@
+.profile-editor {
+  &__wrapper {
+    margin-bottom: rem(50px);
+  }
+
+  &__title {
+    font-size: $font-size-medium;
+    line-height: 1.27;
+    margin-bottom: rem(11px);
+
+    &--opinion {
+      margin-bottom: rem(20px);
+    }
+  }
+
+  &__btns {
+    display: flex;
+    gap: rem(22px);
+    justify-content: flex-end;
+  }
+}
