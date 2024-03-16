@@ -11,6 +11,8 @@
   }
 
   &__title {
+    font-size: rem(30px);
+    line-height: 1.3;
     margin-bottom: rem(30px);
     @media #{$screen-desk} {
       margin-bottom: rem(40px);
