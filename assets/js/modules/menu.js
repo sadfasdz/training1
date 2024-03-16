@@ -15,28 +15,8 @@ export default function () {
   let container = $(document).find(ELEMENTS_SELECTOR.menu);
 
   $(document).on("click", ELEMENTS_SELECTOR.menuBtn, function () {
-    // let page = $(document).find(ELEMENTS_SELECTOR.page);
-    // let container = $(document).find(ELEMENTS_SELECTOR.menu);
-
     page.addClass(CLASSES.pageLock);
     container.addClass(CLASSES.menuAcive);
-    // container
-    //   .find(ELEMENTS_SELECTOR.menuContent)
-    //   .addClass(CLASSES.menuContentAcive);
-    // console.log(container);
-
-    // container
-    //   .find(ELEMENTS_SELECTOR.menuContent)
-    //   .addClass(CLASSES.menuContentAcive);
-    // container
-    //   .find(`[${ELEMENTS_SELECTOR.section}]`)
-    //   .removeClass(CLASSES.tabsBlockActive);
-
-    // $(this).addClass(CLASSES.tabsItemActive);
-
-    // container
-    //   .find(`[${ELEMENTS_SELECTOR.section}="${id}"]`)
-    //   .addClass(CLASSES.tabsBlockActive);
   });
 
   $(document).on("click", ELEMENTS_SELECTOR.btnClose, function () {
