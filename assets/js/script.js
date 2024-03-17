@@ -15,6 +15,7 @@ window.$ = $;
 import tabs from "./modules/tabs";
 import menu from "./modules/menu";
 import swiper from "./modules/swiper";
+import select from "./modules/select";
 
 const app = {
   ready() {
@@ -25,6 +26,7 @@ const app = {
     tabs();
     menu();
     swiper();
+    select();
   },
 
   load() {},

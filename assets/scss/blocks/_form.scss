@@ -5,6 +5,10 @@
     display: flex;
     flex-direction: column;
 
+    &--select {
+      max-width: rem(335px);
+    }
+
     &-block {
       &--search {
         position: absolute;
