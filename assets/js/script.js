@@ -16,6 +16,7 @@ import tabs from "./modules/tabs";
 import menu from "./modules/menu";
 import swiper from "./modules/swiper";
 import select from "./modules/select";
+import tippy from "./modules/tippy";
 
 const app = {
   ready() {
@@ -27,6 +28,7 @@ const app = {
     menu();
     swiper();
     select();
+    tippy();
   },
 
   load() {},

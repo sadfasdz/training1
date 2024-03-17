@@ -7,6 +7,8 @@
 @import "~normalize.css";
 @import "~swiper/css/swiper.min.css";
 @import "~select2/dist/css/select2.css";
+@import "~tippy.js/dist/tippy.css";
+@import "~tippy.js/themes/light.css";
 
 /**
 * Abstracts
@@ -61,3 +63,4 @@
 @import "blocks/reviews";
 @import "blocks/review";
 @import "blocks/select";
+@import "blocks/tippy";
