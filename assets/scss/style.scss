@@ -5,6 +5,7 @@
 // @import "~plugin-name.scss";
 
 @import "~normalize.css";
+@import "~swiper/css/swiper.min.css";
 
 /**
 * Abstracts
@@ -55,3 +56,6 @@
 @import "blocks/info";
 @import "blocks/section";
 @import "blocks/profileEditor";
+@import "blocks/slider";
+@import "blocks/reviews";
+@import "blocks/review";

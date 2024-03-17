@@ -1,0 +1,158 @@
+.review {
+  display: flex;
+  flex-direction: column;
+
+  width: rem(288px);
+  height: rem(250px);
+
+  padding: rem(20px);
+
+  background-color: $white;
+
+  border-radius: rem(24px);
+
+  @media #{$screen-medium} {
+    width: rem(340px);
+  }
+
+  @media #{$screen-desk} {
+    width: rem(580px);
+    height: rem(320px);
+
+    padding: rem(30px);
+  }
+
+  &__header {
+    font-size: $font-size-small;
+    line-height: 1.4;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: rem(11px);
+
+    @media #{$screen-medium} {
+      margin-bottom: rem(15px);
+    }
+
+    @media #{$screen-desk} {
+      margin-bottom: rem(20px);
+    }
+  }
+
+  &__avatar {
+    margin-right: rem(20px);
+
+    width: rem(36px);
+    height: rem(36px);
+
+    background-image: url("../../public/images/icons/review-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media #{$screen-medium} {
+      width: rem(48px);
+      height: rem(48px);
+    }
+
+    @media #{$screen-desk} {
+      width: rem(64px);
+      height: rem(64px);
+    }
+
+    &-pic {
+      width: rem(36px);
+      height: rem(36px);
+
+      border-radius: 50%;
+
+      @media #{$screen-medium} {
+        width: rem(48px);
+        height: rem(48px);
+      }
+
+      @media #{$screen-desk} {
+        width: rem(64px);
+        height: rem(64px);
+      }
+
+      &:not([src="../public/images/news-img.jpg"]) {
+        display: none;
+      }
+
+      &[src=""] {
+        display: none;
+      }
+    }
+  }
+
+  &__author {
+    // font-size: $font-size-medium;
+    font-size: $font-size-small;
+    line-height: 1.4;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    width: rem(90px);
+
+    @media #{$screen-medium} {
+      font-size: $font-size-base;
+    }
+
+    @media #{$screen-desk} {
+      font-size: $font-size-medium;
+      width: rem(320px);
+    }
+  }
+
+  &__date {
+    font-size: $font-size-small;
+    line-height: 1.5;
+
+    margin-left: auto;
+
+    color: rgba(1, 28, 40, 0.35);
+  }
+
+  &__text {
+    font-size: rem(11px);
+    line-height: 1.4;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    margin-bottom: rem(20px);
+
+    @media #{$screen-medium} {
+      font-size: rem(12px);
+      line-height: 1rem;
+
+      margin-bottom: rem(15px);
+    }
+
+    @media #{$screen-desk} {
+      font-size: $font-size-small;
+      line-height: 1.375rem;
+
+      -webkit-line-clamp: 7;
+
+      margin-bottom: rem(20px);
+    }
+  }
+
+  &__footer {
+    margin-top: auto;
+    margin-left: auto;
+
+    &-icon {
+      width: rem(89px);
+      height: rem(24px);
+    }
+  }
+}
