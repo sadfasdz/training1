@@ -1,0 +1,12 @@
+.tippy {
+  display: block;
+
+  &--favorite {
+    font-size: rem(12px);
+    line-height: 1.6;
+
+    padding: rem(8px) rem(12px);
+
+    color: $bunker;
+  }
+}
