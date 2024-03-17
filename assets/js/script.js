@@ -14,6 +14,7 @@ window.$ = $;
 // import myModule from './modules/my-module-function';
 import tabs from "./modules/tabs";
 import menu from "./modules/menu";
+import swiper from "./modules/swiper";
 
 const app = {
   ready() {
@@ -23,6 +24,7 @@ const app = {
     // myModule();
     tabs();
     menu();
+    swiper();
   },
 
   load() {},

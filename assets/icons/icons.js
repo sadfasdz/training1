@@ -17,3 +17,5 @@ import "./svg/search.svg";
 import "./svg/star.svg";
 import "./svg/youTube.svg";
 import "./svg/star-active.svg";
+import "./svg/review-company.svg";
+import "./svg/thin-arrow.svg";

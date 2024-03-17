@@ -1,0 +1,15 @@
+.reviews {
+  &__item {
+    width: rem(288px);
+    height: rem(250px);
+
+    @media #{$screen-medium} {
+      width: rem(340px);
+    }
+
+    @media #{$screen-desk} {
+      width: rem(580px);
+      height: rem(320px);
+    }
+  }
+}
