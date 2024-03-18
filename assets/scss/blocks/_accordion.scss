@@ -1,0 +1,98 @@
+.accordeon {
+  &__item {
+    padding: rem(20px) rem(16px);
+
+    border-radius: rem(12px);
+    background-color: #f4f3f6;
+
+    & + & {
+      margin-top: rem(16px);
+    }
+  }
+
+  &__item--opened & {
+    &__btn {
+      &-icon {
+        transform: rotate(180deg);
+
+        color: $cerise-red;
+
+        transition: all 0.3s ease;
+      }
+    }
+
+    &__title {
+      color: $cerise-red;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    cursor: pointer;
+  }
+
+  &__title {
+    font-size: rem($font-size-small);
+
+    margin-right: rem(35px);
+
+    transition: all 0.3s ease;
+
+    @media #{$screen-desk} {
+      font-size: rem($font-size-base);
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: rem(24px);
+    height: rem(24px);
+
+    background-color: $white;
+
+    border-radius: 50%;
+
+    &-icon {
+      width: rem(16px);
+      height: rem(16px);
+
+      transition: all 0.3s ease;
+    }
+
+    &-pic {
+      width: rem(16px);
+      height: rem(16px);
+    }
+  }
+
+  &__body {
+    display: none;
+
+    &--opened {
+      display: block;
+    }
+  }
+
+  &__text {
+    font-size: rem(12px);
+    line-height: rem(22px);
+
+    margin: rem(12px) rem(16px) 0 0;
+    padding-top: rem(12px);
+
+    color: $slate-gray;
+    border-top: rem(1px) solid #d9d9d9;
+
+    @media #{$screen-desk} {
+      font-size: rem($font-size-small);
+
+      margin: rem(36px) rem(56px) 0 0;
+      padding-bottom: rem(22px);
+    }
+  }
+}
