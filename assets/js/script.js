@@ -18,6 +18,7 @@ import swiper from "./modules/swiper";
 import select from "./modules/select";
 import tippy from "./modules/tippy";
 import showMore from "./modules/showMore";
+import accordeon from "./modules/accordeon";
 
 const app = {
   ready() {
@@ -31,6 +32,7 @@ const app = {
     select();
     tippy();
     showMore();
+    accordeon();
   },
 
   load() {},

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <title>FAQ</title>
+  </head>
+
+  <body class="page" data-page>
+    <header class="page__header header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="heaeder__col header__col--logo">
+            <div class="logo logo--header">
+              <a href="#" class="logo__link">
+                <img
+                  src="../public/images/icons/header-logo.svg"
+                  alt="logo"
+                  class="logo__pic logo__pic--header"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="header__col header__col--search">
+            <form action="#" class="form">
+              <div class="form__field">
+                <div class="form__field-block form__field-block--search">
+                  <button class="btn btn--search">
+                    <svg class="btn--search-icon icon">
+                      <use
+                        xlink:href="../public/images/icons/sprite.svg#icon-search"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="form__field-block form__field-block--input">
+                  <div class="input">
+                    <input
+                      type="text"
+                      placeholder="найти..."
+                      class="input__control input__control--search"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="header__col header__col--profile">
+            <div class="profile profile--hidden">
+              <a href="#" class="profile__link"></a>
+              <div class="profile__block">
+                <div class="profile__name">Константин</div>
+                <div class="profile__avatar">
+                  <img
+                    src="../public/images/news-img.jpg"
+                    class="profile__avatar-pic"
+                  />
+                </div>
+              </div>
+              <div class="profile__icon">
+                <svg class="profile__icon-pic icon">
+                  <use
+                    xlink:href="../public/images/icons/sprite.svg#icon-profile-mobile"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="page__body body">
+      <div class="container">
+        <div class="body__wrapper">
+          <div class="body__menu menu" data-menu>
+            <div class="menu__content" data-menu-content>
+              <header class="menu__header">
+                <h4 class="menu__header-title">Меню раздела</h4>
+                <button class="menu__header-btn" data-close>
+                  <svg class="icon menu__header-icon">
+                    <use
+                      xlink:href="../public/images/icons/sprite.svg#icon-close"
+                    ></use>
+                  </svg>
+                </button>
+              </header>
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="" class="menu__link">Избранное</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Моя компания</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Моё развитие</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link menu__link--active"
+                    >Новости компании</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Телефонная книга</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="body__main">
+            <button class="body__btn btn btn__menu" data-menu-btn>
+              <svg class="icon btn__menu-icon">
+                <use
+                  xlink:href="../public/images/icons/sprite.svg#icon-menu"
+                ></use>
+              </svg>
+              Меню раздела
+            </button>
+
+            <nav class="body__breadcrumbs breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__link">Тут</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__link">Будут</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__link">Хлебные</a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--active">
+                  <a class="breadcrumbs__link">Крошки</a>
+                </li>
+              </ul>
+            </nav>
+            <h1 class="body__title title">FAQ</h1>
+            <main class="page__content page__content--menu content">
+              <div class="faq">
+                <div class="faq__block">
+                  <div class="faq__title">Регистрация</div>
+                  <ul class="faq__accordeon accordeon">
+                    <li
+                      class="accordeon__item accordeon__item--opened"
+                      data-accordeon
+                    >
+                      <div class="accordeon__header" data-accordeon-toggle>
+                        <h3 class="accordeon__title">
+                          Обязательно ли регистрироваться на сайте, чтобы
+                          заказать продукцию?
+                        </h3>
+                        <button class="accordeon__btn">
+                          <span class="accordeon__btn-icon">
+                            <svg class="icon accordeon__btn-pic">
+                              <use
+                                xlink:href="../public/images/icons/sprite.svg#icon-arrow-up"
+                              ></use>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                      <div
+                        class="accordeon__body accordeon__body--opened"
+                        data-accordeon-content
+                      >
+                        <p class="accordeon__text">
+                          Вы можете приобрести нашу продукцию через наших
+                          партнеров - консультантов в авторизованных
+                          дистрибьютерских центрах, либо зарегистрировавшись на
+                          нашем сайте. Дополнительно после регистрации Вы
+                          получите скидку на весь ассортимент товаров, а также
+                          доступ к специальным предложениям. Зарегистрируйтесь
+                          сейчас и экономьте на каждой покупке!
+                        </p>
+                      </div>
+                    </li>
+                    <li class="accordeon__item" data-accordeon>
+                      <div class="accordeon__header" data-accordeon-toggle>
+                        <h3 class="accordeon__title">
+                          Взимается ли плата за регистрацию?
+                        </h3>
+                        <button class="accordeon__btn">
+                          <span class="accordeon__btn-icon">
+                            <svg class="icon accordeon__btn-pic">
+                              <use
+                                xlink:href="../public/images/icons/sprite.svg#icon-arrow-up"
+                              ></use>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="accordeon__body" data-accordeon-content>
+                        <p class="accordeon__text">нет</p>
+                      </div>
+                    </li>
+                    <li class="accordeon__item" data-accordeon>
+                      <div class="accordeon__header" data-accordeon-toggle>
+                        <h3 class="accordeon__title">Что такое логин?</h3>
+                        <button class="accordeon__btn">
+                          <span class="accordeon__btn-icon">
+                            <svg class="icon accordeon__btn-pic">
+                              <use
+                                xlink:href="../public/images/icons/sprite.svg#icon-arrow-up"
+                              ></use>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="accordeon__body" data-accordeon-content>
+                        <p class="accordeon__text">да</p>
+                      </div>
+                    </li>
+                    <li class="accordeon__item" data-accordeon>
+                      <div class="accordeon__header" data-accordeon-toggle>
+                        <h3 class="accordeon__title">
+                          Может ли человек, не являющийся гражданином России,
+                          стать зарегистрированным Покупателем?
+                        </h3>
+                        <button class="accordeon__btn">
+                          <span class="accordeon__btn-icon">
+                            <svg class="icon accordeon__btn-pic">
+                              <use
+                                xlink:href="../public/images/icons/sprite.svg#icon-arrow-up"
+                              ></use>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="accordeon__body" data-accordeon-content>
+                        <p class="accordeon__text">да</p>
+                      </div>
+                    </li>
+                    <li class="accordeon__item" data-accordeon>
+                      <div class="accordeon__header" data-accordeon-toggle>
+                        <h3 class="accordeon__title">
+                          Что делать, если при регистрации указал неверные
+                          данные?
+                        </h3>
+                        <button class="accordeon__btn">
+                          <span class="accordeon__btn-icon">
+                            <svg class="icon accordeon__btn-pic">
+                              <use
+                                xlink:href="../public/images/icons/sprite.svg#icon-arrow-up"
+                              ></use>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="accordeon__body" data-accordeon-content>
+                        <p class="accordeon__text">да</p>
+                      </div>
+                    </li>
+                    <li class="accordeon__item" data-accordeon>
+                      <div class="accordeon__header" data-accordeon-toggle>
+                        <h3 class="accordeon__title">
+                          Как поменять пароль для входа в личный кабинет?
+                        </h3>
+                        <button class="accordeon__btn">
+                          <span class="accordeon__btn-icon">
+                            <svg class="icon accordeon__btn-pic">
+                              <use
+                                xlink:href="../public/images/icons/sprite.svg#icon-arrow-up"
+                              ></use>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="accordeon__body" data-accordeon-content>
+                        <p class="accordeon__text">да</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="faq__block">
+                  <div class="faq__title">Личный кабинет</div>
+                  <ul class="faq__accordeon accordeon">
+                    <li
+                      class="accordeon__item accordeon__item--opened"
+                      data-accordeon
+                    >
+                      <div class="accordeon__header" data-accordeon-toggle>
+                        <h3 class="accordeon__title">
+                          Что делать, если я забыл свой пароль от личного
+                          кабинета?
+                        </h3>
+                        <button class="accordeon__btn">
+                          <span class="accordeon__btn-icon">
+                            <svg class="icon accordeon__btn-pic">
+                              <use
+                                xlink:href="../public/images/icons/sprite.svg#icon-arrow-up"
+                              ></use>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                      <div
+                        class="accordeon__body accordeon__body--opened"
+                        data-accordeon-content
+                      >
+                        <p class="accordeon__text">
+                          Вы можете приобрести нашу продукцию через наших
+                          партнеров - консультантов в авторизованных
+                          дистрибьютерских центрах, либо зарегистрировавшись на
+                          нашем сайте. Дополнительно после регистрации Вы
+                          получите скидку на весь ассортимент товаров, а также
+                          доступ к специальным предложениям. Зарегистрируйтесь
+                          сейчас и экономьте на каждой покупке!
+                        </p>
+                      </div>
+                    </li>
+                    <li class="accordeon__item" data-accordeon>
+                      <div class="accordeon__header" data-accordeon-toggle>
+                        <h3 class="accordeon__title">
+                          Где я могу добавить/изменить электронный адрес
+                          (email)?
+                        </h3>
+                        <button class="accordeon__btn">
+                          <span class="accordeon__btn-icon">
+                            <svg class="icon accordeon__btn-pic">
+                              <use
+                                xlink:href="../public/images/icons/sprite.svg#icon-arrow-up"
+                              ></use>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="accordeon__body" data-accordeon-content>
+                        <p class="accordeon__text">нет</p>
+                      </div>
+                    </li>
+                    <li class="accordeon__item" data-accordeon>
+                      <div class="accordeon__header" data-accordeon-toggle>
+                        <h3 class="accordeon__title">
+                          Где я могу добавить/изменить номер телефона?
+                        </h3>
+                        <button class="accordeon__btn">
+                          <span class="accordeon__btn-icon">
+                            <svg class="icon accordeon__btn-pic">
+                              <use
+                                xlink:href="../public/images/icons/sprite.svg#icon-arrow-up"
+                              ></use>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="accordeon__body" data-accordeon-content>
+                        <p class="accordeon__text">да</p>
+                      </div>
+                    </li>
+                    <li class="accordeon__item" data-accordeon>
+                      <div class="accordeon__header" data-accordeon-toggle>
+                        <h3 class="accordeon__title">
+                          Каким образом я могу изменить свои персональные данные
+                          в личном кабинете?
+                        </h3>
+                        <button class="accordeon__btn">
+                          <span class="accordeon__btn-icon">
+                            <svg class="icon accordeon__btn-pic">
+                              <use
+                                xlink:href="../public/images/icons/sprite.svg#icon-arrow-up"
+                              ></use>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="accordeon__body" data-accordeon-content>
+                        <p class="accordeon__text">да</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <button class="btn faq__btn">Обратиться в техподдержку</button>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews page__reviews">
+      <div class="reviews__slider slider">
+        <div class="slider__box" data-carusel="infinity">
+          <div class="swiper-container" data-carusel-container>
+            <ul class="reviews__list swiper-wrapper">
+              <li class="reviews__item swiper-slide">
+                <article class="review review--slide">
+                  <header class="review__header">
+                    <div class="review__avatar">
+                      <img
+                        class="review__avatar-pic"
+                        src="../public/images/news-img.jpg"
+                        class="profile__avatar-pic"
+                      />
+                    </div>
+                    <h3 class="review__author">Александра</h3>
+                    <span class="review__date">05.04.2019</span>
+                  </header>
+                  <div class="review__text">
+                    Вы можете приобрести нашу продукцию через наших партнеров -
+                    консультантов в авторизованных дистрибьютерских центрах,
+                    либо зарегистрировавшись на нашем сайте. Дополнительно после
+                    регистрации Вы получите скидку на весь ассортимент товаров,
+                    а также доступ к специальным предложениям. Зарегистрируйтесь
+                    сейчас и экономьте на каждой покупке!
+                  </div>
+                  <footer class="review__footer">
+                    <svg class="review__footer-icon icon">
+                      <use
+                        xlink:href="../public/images/icons/sprite.svg#icon-review-company"
+                      ></use>
+                    </svg>
+                  </footer>
+                </article>
+              </li>
+              <li class="reviews__item swiper-slide">
+                <article class="review review--slide">
+                  <header class="review__header">
+                    <div class="review__avatar">
+                      <img
+                        class="review__avatar-pic"
+                        src="../public/images/news-img.jpg"
+                        class="profile__avatar-pic"
+                      />
+                    </div>
+                    <h3 class="review__author">Александра</h3>
+                    <span class="review__date">05.04.2019</span>
+                  </header>
+                  <div class="review__text">
+                    Вы можете приобрести нашу продукцию через наших партнеров -
+                    консультантов в авторизованных дистрибьютерских центрах,
+                    либо зарегистрировавшись на нашем сайте. Дополнительно после
+                    регистрации Вы получите скидку на весь ассортимент товаров,
+                    а также доступ к специальным предложениям. Зарегистрируйтесь
+                    сейчас и экономьте на каждой покупке!
+                  </div>
+                  <footer class="review__footer">
+                    <svg class="review__footer-icon icon">
+                      <use
+                        xlink:href="../public/images/icons/sprite.svg#icon-review-company"
+                      ></use>
+                    </svg>
+                  </footer>
+                </article>
+              </li>
+              <li class="reviews__item swiper-slide">
+                <article class="review review--slide">
+                  <header class="review__header">
+                    <div class="review__avatar">
+                      <img
+                        class="review__avatar-pic"
+                        src="../public/images/news-img.jpg"
+                        class="profile__avatar-pic"
+                      />
+                    </div>
+                    <h3 class="review__author">
+                      АлександраАлександраАлександра
+                    </h3>
+                    <span class="review__date">05.04.2019</span>
+                  </header>
+                  <div class="review__text">
+                    дистрибьютерских центрах, либо зарегистрировавшись на нашем
+                    сайте. Дополнительно после регистрации Вы получите скидку на
+                    весь ассортимент товаров, а также доступ к специальным
+                    предложениям. Зарегистрируйтесь сейчас и экономьте на каждой
+                    покупке!
+                  </div>
+                  <footer class="review__footer">
+                    <svg class="review__footer-icon icon">
+                      <use
+                        xlink:href="../public/images/icons/sprite.svg#icon-review-company"
+                      ></use>
+                    </svg>
+                  </footer>
+                </article>
+              </li>
+              <li class="reviews__item swiper-slide">
+                <article class="review review--slide">
+                  <header class="review__header">
+                    <div class="review__avatar">
+                      <img
+                        class="review__avatar-pic"
+                        src="../public/images/news-img.jpg"
+                        class="profile__avatar-pic"
+                      />
+                    </div>
+                    <h3 class="review__author">Александра</h3>
+                    <span class="review__date">05.04.2019</span>
+                  </header>
+                  <div class="review__text">
+                    дистрибьютерских центрах, либо зарегистрировавшись на нашем
+                    сайте. Дополнительно после регистрации Вы получите скидку на
+                    весь ассортимент товаров, а также доступ к специальным
+                    предложениям. Зарегистрируйтесь сейчас и экономьте на каждой
+                    покупке!
+                  </div>
+                  <footer class="review__footer">
+                    <svg class="review__footer-icon icon">
+                      <use
+                        xlink:href="../public/images/icons/sprite.svg#icon-review-company"
+                      ></use>
+                    </svg>
+                  </footer>
+                </article>
+              </li>
+              <li class="reviews__item swiper-slide">
+                <article class="review review--slide">
+                  <header class="review__header">
+                    <div class="review__avatar">
+                      <img
+                        class="review__avatar-pic"
+                        src="../public/images/news-img.jpg"
+                        class="profile__avatar-pic"
+                      />
+                    </div>
+                    <h3 class="review__author">Александра Александра</h3>
+                    <span class="review__date">05.04.2019</span>
+                  </header>
+                  <div class="review__text">
+                    Вы можете приобрести нашу продукцию через наших партнеров -
+                    консультантов в авторизованных дистрибьютерских центрах,
+                    либо зарегистрировавшись на
+                  </div>
+                  <footer class="review__footer">
+                    <svg class="review__footer-icon icon">
+                      <use
+                        xlink:href="../public/images/icons/sprite.svg#icon-review-company"
+                      ></use>
+                    </svg>
+                  </footer>
+                </article>
+              </li>
+            </ul>
+
+            <div class="slider__buttons">
+              <div
+                class="slider__buttons-item swiper-button-prev"
+                data-carusel-prev
+              >
+                <button class="slider__button slider__button--prev">
+                  <svg class="slider__button-icon icon">
+                    <use
+                      xlink:href="../public/images/icons/sprite.svg#icon-thin-arrow"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
+
+              <div
+                class="slider__buttons-item swiper-button-next"
+                data-carusel-next
+              >
+                <button class="slider__button slider__button--next">
+                  <svg class="slider__button-icon icon">
+                    <use
+                      xlink:href="../public/images/icons/sprite.svg#icon-thin-arrow"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page__footer footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__col footer__col--socials">
+            <ul class="socials">
+              <li class="socials__item">
+                <a href="" class="socials__link">
+                  <svg class="socials__link-pic icon">
+                    <use
+                      xlink:href="../public/images/icons/sprite.svg#icon-youTube"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="" class="socials__link">
+                  <svg class="socials__link-pic icon">
+                    <use
+                      xlink:href="../public/images/icons/sprite.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col--links">
+            <ul class="links">
+              <li class="links__item"><a class="link">Правила</a></li>
+              <li class="links__item"><a class="link">Документы</a></li>
+              <li class="links__item">
+                <a class="link">Политика конфиденциальности</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col--logo">
+            <div class="logo logo--footer">
+              <a href="#" class="logo__link"
+                ><svg class="logo__pic logo__pic--footer">
+                  <use
+                    xlink:href="../public/images/icons/sprite.svg#icon-footer-logo"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/public/js/script.js"></script>
+  </body>
+</html>
