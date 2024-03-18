@@ -1,4 +1,10 @@
 .reviews {
+  height: rem(250px);
+
+  @media #{$screen-desk} {
+    height: rem(320px);
+  }
+
   &__item {
     width: rem(288px);
     height: rem(250px);
@@ -11,5 +17,11 @@
       width: rem(580px);
       height: rem(320px);
     }
+  }
+
+  &__slider {
+    position: absolute;
+    right: 0;
+    left: 0;
   }
 }
