@@ -4,10 +4,34 @@
   }
 
   .swiper {
+    &-pagination {
+      bottom: 0;
+
+      display: none;
+
+      @media #{$screen-desk} {
+        display: block;
+      }
+
+      &-bullet {
+        &-active {
+          background-color: $tapestry;
+        }
+      }
+    }
+
     &-slide {
       opacity: 0.5;
 
       &-active {
+        opacity: 1;
+      }
+    }
+  }
+
+  &--notifications {
+    .swiper {
+      &-slide {
         opacity: 1;
       }
     }
