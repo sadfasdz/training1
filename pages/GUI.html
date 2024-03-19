@@ -1612,6 +1612,168 @@
             </div>
           </div>
         </div>
+
+        <h2>Modal</h2>
+        <div class="block">
+          <button
+            class="btn"
+            data-modal-type="modal"
+            data-src="#technical-support-1"
+          >
+            <span class="btn__text">Modal 1</span>
+          </button>
+
+          <button
+            class="btn"
+            data-modal-type="modal"
+            data-src="#technical-support-2"
+          >
+            <span class="btn__text">Modal 2</span>
+          </button>
+
+          <article
+            id="technical-support-1"
+            class="modal modal--small modal--centered"
+            style="display: none"
+          >
+            <div class="modal__content">
+              <header class="modal__section modal__section--header">
+                <p class="modal__title">Техническая поддержка</p>
+              </header>
+              <section class="modal__section modal__section--content">
+                <form action="" class="form">
+                  <div class="form__field form__field--profile-editor">
+                    <div class="form__field-block form__field-block--label">
+                      <label for="input1" class="form__label"
+                        ><span class="form__label-text">Фамилия</span>
+                        <span class="form__label-star">*</span>
+                      </label>
+                    </div>
+                    <div class="form__field-block">
+                      <div class="input">
+                        <input
+                          type="text"
+                          placeholder="placeholder..."
+                          class="input__control"
+                          id="input1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__field">
+                    <div class="form__field-block form__field-block--label">
+                      <label for="textarea1" class="form__label"
+                        ><span class="form__label-text">Textarea</span>
+                      </label>
+                    </div>
+                    <div class="form__field-block form__field-block--textarea">
+                      <div class="textarea">
+                        <textarea
+                          type="text"
+                          placeholder="placeholder..."
+                          class="textarea__control"
+                          id="textarea1"
+                          name="textarea"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </section>
+              <div class="modal__section modal__section--actions">
+                <button class="modal__btn btn">
+                  <span class="btn__text">Отправить</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            id="technical-support-2"
+            class="modal modal--small modal--centered"
+            style="display: none"
+          >
+            <div class="modal__content">
+              <header class="modal__section modal__section--header">
+                <p class="modal__title">Техническая поддержка</p>
+              </header>
+              <section class="modal__section modal__section--content">
+                <form action="" class="form">
+                  <div class="form__field form__field--profile-editor">
+                    <div class="form__field-block form__field-block--label">
+                      <label class="form__label">
+                        <span class="form__label-text">Селект</span>
+                      </label>
+                    </div>
+                    <div class="form__field-block">
+                      <div class="form__control">
+                        <div class="select" data-select>
+                          <select
+                            name="select"
+                            class="select__control"
+                            data-select-control
+                            data-select-modal
+                            data-placeholder="Селект"
+                          >
+                            <option value="Надежный">Надежный</option>
+                            <option value="Открытый">Открытый</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="form__field form__field--profile-editor"
+                    style="display: none"
+                    data-select-content="Открытый"
+                  >
+                    <div class="form__field-block form__field-block--label">
+                      <label for="input1" class="form__label"
+                        ><span class="form__label-text">Фамилия</span>
+                        <span class="form__label-star">*</span>
+                      </label>
+                    </div>
+                    <div class="form__field-block">
+                      <div class="input">
+                        <input
+                          type="text"
+                          placeholder="placeholder..."
+                          class="input__control"
+                          id="input1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form__field">
+                    <div class="form__field-block form__field-block--label">
+                      <label for="textarea1" class="form__label"
+                        ><span class="form__label-text">Textarea</span>
+                      </label>
+                    </div>
+                    <div class="form__field-block form__field-block--textarea">
+                      <div class="textarea">
+                        <textarea
+                          type="text"
+                          placeholder="placeholder..."
+                          class="textarea__control"
+                          id="textarea1"
+                          name="textarea"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </section>
+              <div class="modal__section modal__section--actions">
+                <button class="modal__btn btn">
+                  <span class="btn__text">Отправить</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </main>
     <footer class="page__footer footer">

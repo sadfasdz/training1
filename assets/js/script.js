@@ -21,6 +21,8 @@ import showMore from "./modules/showMore";
 import accordeon from "./modules/accordeon";
 import validation from "./modules/validation";
 import mask from "./modules/mask";
+import modal from "./modules/modal";
+import modalSelect from "./modules/modalSelect";
 
 const app = {
   ready() {
@@ -37,6 +39,8 @@ const app = {
     accordeon();
     validation();
     mask();
+    modal();
+    modalSelect();
   },
 
   load() {},

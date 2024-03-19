@@ -1,8 +1,13 @@
 .input {
   position: relative;
 
+  &__error {
+    + .select2 .selection .select2-selection {
+      border: 1px solid $error-color;
+    }
+  }
+
   &__control {
-    max-width: rem(335px);
     height: rem(50px);
     width: 100%;
 
@@ -48,12 +53,6 @@
 
   &__error {
     border: 1px solid $error-color;
-  }
-
-  &__error {
-    + .select2 .selection .select2-selection {
-      border: 1px solid $error-color;
-    }
   }
 
   &__error + &__error {
