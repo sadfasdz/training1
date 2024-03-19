@@ -20,6 +20,7 @@ import tippy from "./modules/tippy";
 import showMore from "./modules/showMore";
 import accordeon from "./modules/accordeon";
 import validation from "./modules/validation";
+import mask from "./modules/mask";
 
 const app = {
   ready() {
@@ -35,6 +36,7 @@ const app = {
     showMore();
     accordeon();
     validation();
+    mask();
   },
 
   load() {},
