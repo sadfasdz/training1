@@ -1,16 +1,6 @@
 .select {
   position: relative;
 
-  .error + .error {
-    font-size: rem(10px);
-
-    position: absolute;
-    left: 0;
-    bottom: rem(-15px);
-
-    color: $error-color;
-  }
-
   .select2-container {
     .select2-selection {
       &::after {
@@ -143,13 +133,13 @@
 
     &.select2-container--above {
       .select2-selection--single {
-        border-top: 0;
+        border-top: none;
       }
     }
 
     &.select2-container--below {
       .select2-selection--single {
-        border-bottom: 0;
+        border-bottom: none;
       }
     }
 
