@@ -19,6 +19,7 @@ import select from "./modules/select";
 import tippy from "./modules/tippy";
 import showMore from "./modules/showMore";
 import accordeon from "./modules/accordeon";
+import validation from "./modules/validation";
 
 const app = {
   ready() {
@@ -33,6 +34,7 @@ const app = {
     tippy();
     showMore();
     accordeon();
+    validation();
   },
 
   load() {},

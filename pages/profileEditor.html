@@ -138,7 +138,11 @@
             </nav>
             <h1 class="body__title title">Редактировать профиль</h1>
             <main class="page__content page__content--menu content">
-              <form action="" class="profile-editor profile-editor__form form">
+              <form
+                action=""
+                class="profile-editor profile-editor__form form"
+                data-profileEditor-form
+              >
                 <div class="profile-editor__wrapper">
                   <h2 class="profile-editor__title">Общее</h2>
                   <div class="form__field form__field--profile-editor">
@@ -155,13 +159,14 @@
                           placeholder="Введите имя..."
                           class="input__control"
                           id="input1"
+                          name="name"
                         />
                       </div>
                     </div>
                   </div>
                   <div class="form__field form__field--profile-editor">
                     <div class="form__field-block form__field-block--label">
-                      <label for="input1" class="form__label"
+                      <label for="input2" class="form__label"
                         ><span class="form__label-text">Фамилия</span>
                         <span class="form__label-star">*</span>
                       </label>
@@ -172,14 +177,15 @@
                           type="text"
                           placeholder="Введите фамилию..."
                           class="input__control"
-                          id="input1"
+                          id="input2"
+                          name="surname"
                         />
                       </div>
                     </div>
                   </div>
                   <div class="form__field form__field--profile-editor">
                     <div class="form__field-block form__field-block--label">
-                      <label for="input1" class="form__label"
+                      <label for="input3" class="form__label"
                         ><span class="form__label-text">Отчество</span>
                         <span class="form__label-star">*</span>
                       </label>
@@ -190,26 +196,70 @@
                           type="text"
                           placeholder="Введите отчество..."
                           class="input__control"
-                          id="input1"
+                          id="input3"
+                          name="patronymic"
                         />
                       </div>
                     </div>
                   </div>
-                  <div class="form__field form__field--profile-editor">
+                  <div
+                    class="form__field form__field--select form__field--profile-editor"
+                  >
                     <div class="form__field-block form__field-block--label">
-                      <label for="input1" class="form__label"
-                        ><span class="form__label-text">Специализация</span>
+                      <label class="form__label">
+                        <span class="form__label-text">Специализация</span>
                         <span class="form__label-star">*</span>
                       </label>
                     </div>
                     <div class="form__field-block form__field-block--input">
-                      <div class="input">
-                        <input
-                          type="text"
-                          placeholder="Введите специализацию..."
-                          class="input__control"
-                          id="input1"
-                        />
+                      <div class="form__control">
+                        <div class="select" data-select>
+                          <select
+                            class="select__control"
+                            data-select-control
+                            data-placeholder="Селект"
+                            name="specialization"
+                          >
+                            <option value=""></option>
+                            <option value="1">Надежный</option>
+                            <option value="2">Открытый</option>
+                            <option value="3">123</option>
+                            <option value="4" disabled>Недоступный</option>
+                            <option value="5">Открытый</option>
+                            <option value="6">Открытый</option>
+                            <option value="7">Открытый</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="form__field form__field--select form__field--profile-editor"
+                  >
+                    <div class="form__field-block form__field-block--label">
+                      <label class="form__label">
+                        <span class="form__label-text">Ещё что-то </span>
+                      </label>
+                    </div>
+                    <div class="form__field-block form__field-block--input">
+                      <div class="form__control">
+                        <div class="select" data-select>
+                          <select
+                            class="select__control"
+                            data-select-control
+                            data-placeholder="Селект"
+                            name="anything"
+                          >
+                            <option value=""></option>
+                            <option value="1">Надежный</option>
+                            <option value="2">Открытый</option>
+                            <option value="3">123</option>
+                            <option value="4" disabled>Недоступный</option>
+                            <option value="5">Открытый</option>
+                            <option value="6">Открытый</option>
+                            <option value="7">Открытый</option>
+                          </select>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -258,7 +308,7 @@
                   <h2 class="profile-editor__title">Контакты</h2>
                   <div class="form__field form__field--profile-editor">
                     <div class="form__field-block form__field-block--label">
-                      <label for="input1" class="form__label"
+                      <label for="phone1" class="form__label"
                         ><span class="form__label-text">Основной телефон</span>
                         <span class="form__label-star">*</span>
                       </label>
@@ -266,17 +316,18 @@
                     <div class="form__field-block form__field-block--input">
                       <div class="input">
                         <input
-                          type="text"
+                          type="tel"
                           placeholder="Номер телефона..."
                           class="input__control"
-                          id="input1"
+                          id="phone1"
+                          name="phone1"
                         />
                       </div>
                     </div>
                   </div>
                   <div class="form__field form__field--profile-editor">
                     <div class="form__field-block form__field-block--label">
-                      <label for="input1" class="form__label"
+                      <label for="phone2" class="form__label"
                         ><span class="form__label-text"
                           >Дополнительный телефон</span
                         >
@@ -285,17 +336,17 @@
                     <div class="form__field-block form__field-block--input">
                       <div class="input">
                         <input
-                          type="text"
+                          type="tel"
                           placeholder="+7 (_ _ _) _ _ _- _ _ - _ _"
                           class="input__control"
-                          id="input1"
+                          id="phone2"
                         />
                       </div>
                     </div>
                   </div>
                   <div class="form__field form__field--profile-editor">
                     <div class="form__field-block form__field-block--label">
-                      <label for="input1" class="form__label"
+                      <label for="phone3" class="form__label"
                         ><span class="form__label-text"
                           >Дополнительный телефон 2</span
                         >
@@ -304,17 +355,17 @@
                     <div class="form__field-block form__field-block--input">
                       <div class="input">
                         <input
-                          type="text"
+                          type="tel"
                           placeholder="+7 (_ _ _) _ _ _- _ _ - _ _"
                           class="input__control"
-                          id="input1"
+                          id="phone3"
                         />
                       </div>
                     </div>
                   </div>
                   <div class="form__field form__field--profile-editor">
                     <div class="form__field-block form__field-block--label">
-                      <label for="input1" class="form__label"
+                      <label for="phone4" class="form__label"
                         ><span class="form__label-text"
                           >Дополнительный телефон 3</span
                         >
@@ -323,18 +374,18 @@
                     <div class="form__field-block form__field-block--input">
                       <div class="input">
                         <input
-                          type="text"
+                          type="tel"
                           placeholder="Номер телефона..."
                           class="input__control"
-                          id="input1"
+                          id="phone4"
                         />
                       </div>
                     </div>
                   </div>
 
-                  <div class="form__field form__field--profile-editor-error">
+                  <div class="form__field form__field--profile-editor">
                     <div class="form__field-block form__field-block--label">
-                      <label for="input3" class="form__label"
+                      <label for="phone5" class="form__label"
                         ><span class="form__label-text"
                           >Дополнительный телефон 4</span
                         >
@@ -343,25 +394,18 @@
                     <div class="form__field-block form__field-block--input">
                       <div class="input">
                         <input
-                          type="text"
+                          type="tel"
                           placeholder="placeholder..."
-                          class="input__control input__control--error"
-                          id="input3"
+                          class="input__control"
+                          id="phone5"
                         />
                       </div>
-                    </div>
-                    <div class="form__field-block form__field-block--label">
-                      <label for="input3" class="form__label"
-                        ><span class="form__label-text form__label-text--error"
-                          >Телефон указан неверно</span
-                        >
-                      </label>
                     </div>
                   </div>
 
                   <div class="form__field form__field--profile-editor">
                     <div class="form__field-block form__field-block--label">
-                      <label for="input1" class="form__label"
+                      <label for="email1" class="form__label"
                         ><span class="form__label-text">Email</span>
                         <span class="form__label-star">*</span>
                       </label>
@@ -372,7 +416,8 @@
                           type="text"
                           placeholder="placeholder..."
                           class="input__control"
-                          id="input1"
+                          id="email1"
+                          name="email1"
                         />
                       </div>
                     </div>
@@ -380,7 +425,7 @@
 
                   <div class="form__field form__field--profile-editor">
                     <div class="form__field-block form__field-block--label">
-                      <label for="input1" class="form__label"
+                      <label for="email2" class="form__label"
                         ><span class="form__label-text">Email 2</span>
                       </label>
                     </div>
@@ -390,7 +435,8 @@
                           type="text"
                           placeholder="placeholder..."
                           class="input__control"
-                          id="input1"
+                          id="email2"
+                          name="email2"
                         />
                       </div>
                     </div>

@@ -1,6 +1,16 @@
 .select {
   position: relative;
 
+  .error + .error {
+    font-size: rem(10px);
+
+    position: absolute;
+    left: 0;
+    bottom: rem(-15px);
+
+    color: $error-color;
+  }
+
   .select2-container {
     .select2-selection {
       &::after {
