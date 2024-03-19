@@ -1,20 +1,6 @@
 .input {
   position: relative;
 
-  .error {
-    border-color: $error-color;
-  }
-
-  .error + .error {
-    font-size: rem(10px);
-
-    position: absolute;
-    left: 0;
-    bottom: rem(-15px);
-
-    color: $error-color;
-  }
-
   &__control {
     max-width: rem(335px);
     height: rem(50px);
@@ -38,14 +24,6 @@
       background-color: $unactive-back-color;
     }
 
-    // &--error {
-    //   border-color: $error-color;
-
-    //   &:focus {
-    //     border-color: $error-color;
-    //   }
-    // }
-
     &--search {
       border: none;
       border-radius: 0;
@@ -66,5 +44,26 @@
         border-radius: $border-radius-base;
       }
     }
+  }
+
+  &__error {
+    border: 1px solid $error-color;
+  }
+
+  &__error {
+    + .select2 .selection .select2-selection {
+      border: 1px solid $error-color;
+    }
+  }
+
+  &__error + &__error {
+    font-size: rem(10px);
+
+    position: absolute;
+    left: 0;
+    bottom: rem(-15px);
+
+    color: $error-color;
+    border: none;
   }
 }
