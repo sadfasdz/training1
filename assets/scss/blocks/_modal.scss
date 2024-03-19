@@ -1,0 +1,117 @@
+.modal {
+  border-radius: rem(24px);
+  box-shadow: 0 rem(12px) rem(24px) rgba($bunker, 0.16);
+
+  &--small {
+    width: rem(610px);
+  }
+
+  &--small & {
+    &__section {
+      @media #{$screen-medium} {
+        padding: 0 rem(120px);
+      }
+    }
+  }
+
+  &--centered & {
+    &__section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    height: auto !important;
+    max-width: 100%;
+
+    padding: rem(32px) 0;
+
+    @media #{$screen-medium} {
+      padding: rem(48px) 0;
+    }
+  }
+
+  &__section {
+    padding-right: rem(16px);
+    padding-left: rem(16px);
+
+    &--header {
+      // flex-shrink: 0;
+
+      margin-bottom: rem(24px);
+
+      @media #{$screen-medium} {
+        margin-bottom: rem(20px);
+      }
+    }
+
+    &--content {
+      flex-grow: 1;
+    }
+
+    &--actions {
+      margin-top: rem(40px);
+    }
+  }
+
+  &__title {
+    font-size: rem($font-size-medium);
+    font-weight: $font-weight-medium;
+    line-height: rem(28px);
+  }
+
+  &__btn {
+    width: 100%;
+  }
+
+  .fancybox {
+    &-bg {
+      background: rgba(#3a3a43, 0.55);
+    }
+
+    &-close {
+      $button-offset: 12px;
+
+      position: absolute;
+      top: rem($button-offset);
+      right: rem($button-offset);
+
+      cursor: pointer;
+
+      @media #{$screen-medium} {
+        $button-offset: 20px;
+
+        top: rem($button-offset);
+        right: rem($button-offset);
+      }
+
+      &-icon {
+        $icon-size: 24px;
+
+        width: rem($icon-size);
+        height: rem($icon-size);
+
+        color: #37a7df;
+      }
+    }
+
+    &-navigation {
+      display: none;
+    }
+
+    &-slide {
+      padding: 0 rem(16px);
+    }
+
+    &-content {
+      overflow: visible;
+
+      padding: 0;
+    }
+  }
+}

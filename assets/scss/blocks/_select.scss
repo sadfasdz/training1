@@ -60,7 +60,7 @@
 
   .select2-dropdown {
     background-color: $white;
-    border: rem(1px) solid $slate-gray;
+    // border: rem(1px) solid $slate-gray;
   }
 
   .select2-results {
@@ -131,17 +131,17 @@
       }
     }
 
-    &.select2-container--above {
-      .select2-selection--single {
-        border-top: none;
-      }
-    }
+    // &.select2-container--above {
+    //   .select2-selection--single {
+    //     border-bottom: none;
+    //   }
+    // }
 
-    &.select2-container--below {
-      .select2-selection--single {
-        border-bottom: none;
-      }
-    }
+    // &.select2-container--below {
+    //   .select2-selection--single {
+    //     border-top: none;
+    //   }
+    // }
 
     .select2-cntainer--default {
       .select2-selection--single {

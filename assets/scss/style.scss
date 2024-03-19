@@ -9,6 +9,7 @@
 @import "~select2/dist/css/select2.css";
 @import "~tippy.js/dist/tippy.css";
 @import "~tippy.js/themes/light.css";
+@import "~@fancyapps/fancybox/dist/jquery.fancybox.css";
 
 /**
 * Abstracts
@@ -66,3 +67,4 @@
 @import "blocks/tippy";
 @import "blocks/accordion";
 @import "blocks/faq";
+@import "blocks/modal";
