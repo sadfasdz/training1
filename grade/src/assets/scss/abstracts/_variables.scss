@@ -1,0 +1,89 @@
+/**
+* Colors
+*
+* Название переменной конкретного цвета генерируется через сервис: http://chir.ag/projects/name-that-color/.
+* Значение цвета всегда указывается в HEX-формате в нижнем регистре (кроме исключительных случаев).
+*/
+// Пример указания цветов
+$bunker: #121920;
+$white: #ffffff;
+$slate-gray: #768298;
+$heather: #bbc4d6;
+$wild-blue-yonder: #6680ae;
+$athens-gray: #ebebf1;
+$curious-blue: #34aadd;
+$tapestry: #a7507b;
+$cerise-red: #dc2c53;
+$carnation: #f95a59;
+$red-orange: #ff3332;
+
+$color-text: $bunker;
+$color-link: $curious-blue;
+$unactive-color: $heather;
+$active-color: $slate-gray;
+$unactive-back-color: $athens-gray;
+$checked: $curious-blue;
+$list-marker: $cerise-red;
+$placeholder-color: $heather;
+$tab-text-color: $slate-gray;
+$error-color: $carnation;
+$background-color: $white;
+$border-color: $cerise-red;
+$btn-back-color: $curious-blue;
+
+/**
+* Fonts
+*/
+$font-path: "/public/fonts/";
+$font-family-default: "Arial", "Helvetica", sans-serif;
+$font-family-custom: "Roboto";
+$font-family: $font-family-custom, $font-family-default;
+
+$font-weight-medium: 500;
+$font-weight-regular: 400;
+
+$font-size-huge: 36px;
+$font-size-big: 30px;
+$font-size-medium: 24px;
+$font-size-normal: 18px;
+$font-size-base: 16px;
+$font-size-small: 14px;
+
+$line-height-default: 1.7;
+$line-height-normal: 1.4;
+$line-height-small: 1.2;
+/**
+* Breakpoints
+*/
+// Пример указания медиазапросов, затем можно использовать ее как '@media #{$screen-medium} {...}'
+$screen-desk: "(min-width: 1280px)";
+$screen-medium: "(min-width: 768px)";
+
+/**
+* Layout
+*/
+
+/**
+* Sizes
+*/
+$max-width-container: 1240px;
+$gap-container: 20px;
+$height-header-desk: 80px;
+$height-header-mobile: 105px;
+
+/**
+* Transitions and Animations
+*/
+
+/**
+* Radius
+*/
+$border-radius-base: 5px;
+
+/**
+* Box-shadows
+*/
+
+/**
+* Z-indexes
+*/
