@@ -7,6 +7,12 @@
     }
   }
 
+  &__error {
+    + .select2 .selection .valid {
+      border: 1px solid $athens-gray;
+    }
+  }
+
   &__control {
     height: rem(50px);
     width: 100%;

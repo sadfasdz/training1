@@ -41,6 +41,7 @@ const app = {
     mask();
     modal();
     modalSelect();
+    changeBorderSelect();
   },
 
   load() {},
