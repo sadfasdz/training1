@@ -34,27 +34,36 @@ export default function () {
     },
     messages: {
       name: {
-        required: "Имя обязательно должно быть заполнено",
+        required: "",
       },
       surname: {
-        required: "Фамилия обязательно должно быть заполнена",
+        required: "",
       },
       patronymic: {
-        required: "Отчество обязательно должно быть заполнено",
+        required: "",
       },
       specialization: {
-        required: "Пожалуйcта выберите один из вариантов",
+        required: "",
       },
       phone1: {
-        required: "телефон обязательно должно быть заполнен",
+        required: "",
       },
       email1: {
-        required: "Email обязательно должно быть заполнено",
+        required: "",
         email: "Пожалуйcта введите корректный Email",
       },
       email2: {
         email: "Пожалуйcта введите корректный Email",
       },
     },
+  });
+
+  $(".select__control").on("change", function () {
+    $(this)
+      .closest(".select")
+      .find(".select2-selection--single")
+      .addClass("valid");
+
+    $(this).addClass("valid");
   });
 }
