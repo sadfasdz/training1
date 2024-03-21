@@ -1,0 +1,86 @@
+.profile {
+  position: relative;
+
+  &__link {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  &__block {
+    display: none;
+
+    @media #{$screen-medium} {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: rem(10px);
+
+      width: rem(150px);
+    }
+  }
+
+  &__icon {
+    width: rem(24px);
+    height: rem(24px);
+
+    color: $color-link;
+
+    &:hover {
+      color: $wild-blue-yonder;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+
+    @media #{$screen-medium} {
+      display: none;
+    }
+
+    &-pic {
+      width: rem(24px);
+      height: rem(24px);
+    }
+  }
+
+  &__name {
+    overflow: hidden;
+
+    width: rem(90px);
+
+    padding-left: rem(10px);
+
+    text-align: right;
+    text-overflow: ellipsis;
+
+    color: $slate-gray;
+  }
+
+  &__avatar {
+    height: rem(40px);
+    width: rem(40px);
+
+    border-radius: 50%;
+
+    // background-image: url("../images/icons/userpic.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &-pic {
+      width: rem(40px);
+      height: rem(40px);
+
+      border-radius: 50%;
+
+      &:not([src="../images/news-img.jpg"]) {
+        display: none;
+      }
+
+      &[src=""] {
+        display: none;
+      }
+    }
+  }
+}

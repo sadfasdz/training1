@@ -1,0 +1,11 @@
+.links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  @media #{$screen-medium} {
+    flex-direction: row;
+    gap: rem(30px);
+  }
+}

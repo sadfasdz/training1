@@ -1,0 +1,69 @@
+/**
+* Vendors
+*/
+// Пример подключения плагинов
+// @import "~plugin-name.scss";
+
+@import "~normalize.css";
+@import "~swiper/css/swiper.min.css";
+@import "~select2/dist/css/select2.css";
+@import "~tippy.js/dist/tippy.css";
+@import "~tippy.js/themes/light.css";
+@import "~@fancyapps/fancybox/dist/jquery.fancybox.css";
+
+/**
+* Abstracts
+*/
+@import "abstracts/functions";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+/**
+* Base
+*/
+// @import "base/fonts";
+@import "base/generic";
+
+/*
+* Components
+*/
+//  Пример подключения стилей блоков
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/container";
+@import "blocks/page";
+@import "blocks/content";
+@import "blocks/body";
+@import "blocks/menu";
+@import "blocks/btn";
+@import "blocks/link";
+@import "blocks/input";
+@import "blocks/textarea";
+@import "blocks/checkbox";
+@import "blocks/checkboxes";
+@import "blocks/radio";
+@import "blocks/radios";
+@import "blocks/form";
+@import "blocks/profile";
+@import "blocks/logo";
+@import "blocks/socials";
+@import "blocks/links";
+@import "blocks/breadcrumbs";
+@import "blocks/cards";
+@import "blocks/card";
+@import "blocks/title";
+@import "blocks/tabs";
+@import "blocks/statistics";
+@import "blocks/notification";
+@import "blocks/notifications";
+@import "blocks/info";
+@import "blocks/section";
+@import "blocks/profileEditor";
+@import "blocks/slider";
+@import "blocks/reviews";
+@import "blocks/review";
+@import "blocks/select";
+@import "blocks/tippy";
+@import "blocks/accordion";
+@import "blocks/faq";
+@import "blocks/modal";

@@ -1,15 +1,26 @@
 <template>
-  <div id="app">
-    <nav>
+  <div id="app" class="page">
+    <HeaderComponent />
+    <!-- <nav>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    </nav> -->
+    <router-view class="page" />
   </div>
 </template>
 
+<script>
+import HeaderComponent from "@/components/HeaderComponent.vue";
+
+export default {
+  components: {
+    HeaderComponent,
+  },
+};
+</script>
+
 <style>
-#app {
+/*#app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,5 +39,5 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
-}
+}*/
 </style>

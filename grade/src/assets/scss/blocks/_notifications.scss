@@ -1,0 +1,28 @@
+.notifications {
+  &__list {
+    @media #{$screen-desk} {
+      height: rem(180px);
+    }
+  }
+  &__item {
+    width: rem(286px);
+  }
+
+  .swiper {
+    &-pagination {
+      bottom: 0;
+
+      display: none;
+
+      @media #{$screen-desk} {
+        display: block;
+      }
+
+      &-bullet {
+        &-active {
+          background-color: $tapestry;
+        }
+      }
+    }
+  }
+}
