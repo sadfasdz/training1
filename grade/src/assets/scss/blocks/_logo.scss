@@ -1,0 +1,38 @@
+.logo {
+  &--header {
+    height: rem(31px);
+  }
+
+  &--footer {
+    height: rem(18px);
+
+    @media #{$screen-desk} {
+      height: rem(27px);
+    }
+  }
+
+  &__pic {
+    &--header {
+      width: rem(135px);
+      height: rem(30px);
+    }
+
+    &--footer {
+      width: rem(95px);
+      height: rem(18px);
+
+      color: $heather;
+
+      transition: all 0.4s ease;
+
+      @media #{$screen-desk} {
+        width: rem(135px);
+        height: rem(27px);
+      }
+
+      &:hover {
+        color: $slate-gray;
+      }
+    }
+  }
+}

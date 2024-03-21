@@ -1,0 +1,60 @@
+.radio {
+  &__inp {
+    display: none;
+  }
+
+  &__inp:checked + &__label & {
+    &__icon::after {
+      background-color: $curious-blue;
+    }
+  }
+
+  &__inp:disabled + &__label {
+    cursor: default;
+  }
+
+  &__inp:disabled + &__label & {
+    &__icon {
+      border-color: $heather;
+      background-color: $athens-gray;
+    }
+  }
+
+  &__inp:disabled:checked + &__label & {
+    &__icon::after {
+      background-color: $heather;
+    }
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: rem(9px);
+
+    cursor: pointer;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    border: 1px solid $curious-blue;
+
+    width: rem(20px);
+    height: rem(20px);
+
+    &::after {
+      display: block;
+
+      width: rem(10px);
+      height: rem(10px);
+
+      content: "";
+
+      border-radius: 50%;
+      background-color: transparent;
+    }
+  }
+}

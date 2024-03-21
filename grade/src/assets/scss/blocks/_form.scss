@@ -1,0 +1,63 @@
+.form {
+  width: 100%;
+  &__field {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    &--select {
+      max-width: rem(335px);
+    }
+
+    &-block {
+      &--search {
+        position: absolute;
+        top: 50%;
+        left: rem(10px);
+
+        height: rem(24px);
+
+        transform: translateY(-50%);
+
+        z-index: 50;
+      }
+
+      &--input {
+        max-width: rem(335px);
+      }
+    }
+
+    &--profile-editor {
+      margin-bottom: rem(21px);
+    }
+  }
+
+  &__label {
+    font-size: rem(12px);
+    line-height: 1.6;
+
+    display: flex;
+
+    letter-spacing: 0.01em;
+
+    &-star {
+      color: $error-color;
+    }
+
+    &-text {
+      display: inline-block;
+
+      color: #4b4b4b;
+
+      &--disabled {
+        color: $heather;
+      }
+      &--error {
+        color: $error-color;
+      }
+    }
+  }
+}

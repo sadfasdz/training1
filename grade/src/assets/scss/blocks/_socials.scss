@@ -1,0 +1,23 @@
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: rem(23px);
+
+  &__item {
+    height: rem(40px);
+  }
+
+  &__link {
+    &-pic {
+      width: rem(40px);
+      height: rem(40px);
+      color: $heather;
+
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: $slate-gray;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.footer {
+  background-color: $white;
+
+  box-shadow: 0 rem(3px) rem(10px) 0 rgba(0, 0, 0, 0.05);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    @media #{$screen-medium} {
+      flex-direction: row;
+      gap: rem(40px);
+    }
+  }
+
+  &__col {
+    padding: rem(20px) 0;
+
+    &--socials {
+      @media #{$screen-desk} {
+        margin: rem(20px) 0;
+        padding: 0;
+        padding-right: rem(40px);
+        border-right: rem(1px) solid rgba($heather, 0.6);
+      }
+    }
+
+    &--links {
+      width: 100%;
+
+      border-bottom: 1px solid $athens-gray;
+      border-top: 1px solid $athens-gray;
+
+      @media #{$screen-medium} {
+        border: none;
+      }
+    }
+  }
+}
