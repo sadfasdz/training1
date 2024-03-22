@@ -8,7 +8,7 @@
   "homepage": "http://sadfasdz.github.io/training",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d training1",
     "start": "webpack --mode=development --progress --watch",
     "build": "webpack --mode=production"
   },
